@@ -1,4 +1,6 @@
 {
+  "name": "bayesimpact-react",
+  "version": "0.0.1",
   "devDependencies": {
     "babel-core": "6.3.26",
     "babel-eslint": "^5.0.0",
