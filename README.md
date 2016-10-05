@@ -1,6 +1,8 @@
 This is the source of the Docker image
 [bayesimpact/react-base](https://hub.docker.com/r/bayesimpact/react-base/).
 
+[![](https://images.microbadger.com/badges/image/bayesimpact/react-base.svg)](https://hub.docker.com/r/bayesimpact/react-base/)
+
 It is used to speed up setup when developping a project using React with npm.
 It prepares a container with node and npm latest versions as well as a good
 deal of node modules pre-installed.
