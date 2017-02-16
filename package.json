@@ -25,7 +25,7 @@
     "eslint-plugin-react": "6.6.0",
     "exports-loader": "0.6.3",
     "file-loader": "0.10.0",
-    "glob": "7.0.3",
+    "glob": "7.1.1",
     "google-protobuf": "3.0.0-alpha.6.2",
     "html-webpack-plugin": "2.24.0",
     "imports-loader": "0.6.5",
