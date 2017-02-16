@@ -75,7 +75,7 @@
     "redux-devtools": "3.3.2",
     "redux-devtools-dock-monitor": "1.1.1",
     "redux-devtools-log-monitor": "1.1.1",
-    "redux-thunk": "2.1.0",
+    "redux-thunk": "2.2.0",
     "rimraf": "2.5.4",
     "rn-redux-mixpanel": "1.1.9",
     "sha1": "1.1.1",
