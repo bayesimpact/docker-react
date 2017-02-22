@@ -20,7 +20,7 @@
     "es6-promise": "3.2.1",
     "eslint": "3.10.0",
     "eslint-import-resolver-webpack": "0.7.0",
-    "eslint-loader": "1.5.0",
+    "eslint-loader": "1.6.2",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-react": "6.6.0",
     "exports-loader": "0.6.3",
