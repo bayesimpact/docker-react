@@ -82,7 +82,7 @@
     "style-loader": "0.13.1",
     "svgo-loader": "1.1.2",
     "underscore": "1.8.3",
-    "url-loader": "0.5.7",
+    "url-loader": "0.5.8",
     "webpack": "1.13.0",
     "webpack-dev-server": "1.14.1"
   }
