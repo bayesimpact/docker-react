@@ -15,9 +15,12 @@ RUN apt-get update -qq && apt-get install -qqy software-properties-common curl &
   && npm install fs-extra \
   && sed -i -e s/graceful-fs/fs-extra/ -e s/fs.rename/fs.move/ ./lib/utils/rename.js
 
+EXPOSE 80
+ENV BIND_HOST=0.0.0.0
+CMD ["npm", "start"]
 WORKDIR /usr/app
 
 # Install a bunch of node modules that are commonly used.
-ADD package.json .
+ADD package.json server.js webpack.config.js cfg /usr/app/
 RUN npm install
 RUN rm package.json
