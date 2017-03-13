@@ -2,7 +2,7 @@
   "name": "bayesimpact-react",
   "version": "0.0.1",
   "dependencies": {
-    "algoliasearch": "3.22.0",
+    "algoliasearch": "3.22.1",
     "autocomplete.js": "0.22.1",
     "babel-core": "6.8.0",
     "babel-eslint": "6.0.4",
