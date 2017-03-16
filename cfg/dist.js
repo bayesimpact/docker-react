@@ -16,7 +16,7 @@ var config = _.merge({
     path: path.join(__dirname, '/../dist/assets'),
     publicPath: '/assets/',
   },
-}, baseConfig)
+}, _.omit(baseConfig, 'entry'))
 
 Array.prototype.push.apply(config.plugins, [
   // Define free variables -> global constants.

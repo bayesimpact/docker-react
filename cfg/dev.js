@@ -17,7 +17,7 @@ var config = _.merge({
     path: __dirname,
     publicPath: baseConfig.devServer.publicPath,
   },
-}, baseConfig)
+}, _.omit(baseConfig, 'entry'))
 
 Array.prototype.push.apply(config.plugins, [
   new webpack.LoaderOptionsPlugin({
