@@ -7,7 +7,7 @@
     "start": "REACT_WEBPACK_ENV=dev node server.js"
   },
   "dependencies": {
-    "algoliasearch": "3.14.1",
+    "algoliasearch": "3.22.1",
     "autocomplete.js": "0.22.1",
     "babel-core": "6.8.0",
     "babel-eslint": "6.0.4",
