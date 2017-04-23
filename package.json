@@ -62,7 +62,7 @@
     "radium": "0.18.2",
     "raw-loader": "0.5.1",
     "react": "15.4.1",
-    "react-addons-test-utils": "15.4.1",
+    "react-addons-test-utils": "15.5.1",
     "react-addons-transition-group": "15.4.1",
     "react-custom-scrollbars": "4.0.0",
     "react-dom": "15.4.1",
