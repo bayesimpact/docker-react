@@ -83,7 +83,7 @@
     "react-visibility-sensor": "3.9.0",
     "redux-devtools-extension": "2.13.0",
     "redux-thunk": "2.1.0",
-    "rimraf": "2.5.4",
+    "rimraf": "2.6.1",
     "rn-redux-mixpanel": "1.1.9",
     "sha1": "1.1.1",
     "style-loader": "0.13.1",
