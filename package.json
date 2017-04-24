@@ -10,7 +10,7 @@
     "airtable": "0.4.5",
     "algoliasearch": "3.14.1",
     "autocomplete.js": "0.22.1",
-    "babel-core": "6.8.0",
+    "babel-core": "6.24.0",
     "babel-eslint": "6.0.4",
     "babel-loader": "6.2.4",
     "babel-polyfill": "6.16.0",
