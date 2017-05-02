@@ -20,7 +20,7 @@
     "chai": "3.5.0",
     "color": "1.0.3",
     "copyfiles": "1.2.0",
-    "css-loader": "0.28.0",
+    "css-loader": "0.28.1",
     "detect-browser": "1.7.0",
     "es6-promise": "4.1.0",
     "eslint": "3.19.0",
