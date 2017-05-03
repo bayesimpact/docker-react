@@ -81,7 +81,7 @@
     "redux-devtools-dock-monitor": "1.1.1",
     "redux-devtools-log-monitor": "1.2.0",
     "react-visibility-sensor": "3.9.0",
-    "redux-devtools-extension": "2.13.0",
+    "redux-devtools-extension": "2.13.1",
     "redux-thunk": "2.2.0",
     "rimraf": "2.6.1",
     "rn-redux-mixpanel": "1.1.9",
