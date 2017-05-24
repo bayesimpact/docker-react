@@ -86,7 +86,7 @@
     "rimraf": "2.6.1",
     "rn-redux-mixpanel": "1.1.9",
     "sha1": "1.1.1",
-    "style-loader": "0.18.0",
+    "style-loader": "0.18.1",
     "svgo-loader": "1.2.1",
     "underscore": "1.8.3",
     "unused-files-webpack-plugin": "3.0.1",
