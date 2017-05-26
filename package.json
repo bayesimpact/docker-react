@@ -17,7 +17,7 @@
     "babel-preset-es2015": "6.24.1",
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-0": "6.24.1",
-    "chai": "3.5.0",
+    "chai": "4.0.0",
     "color": "1.0.3",
     "copyfiles": "1.2.0",
     "css-loader": "0.28.2",
