@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "airtable": "0.5.0",
-    "algoliasearch": "3.22.2",
+    "algoliasearch": "3.22.3",
     "autocomplete.js": "0.28.1",
     "babel-core": "6.24.1",
     "babel-eslint": "7.2.3",
