@@ -30,7 +30,7 @@
     "eslint-plugin-react": "7.0.1",
     "exports-loader": "0.6.4",
     "file-loader": "0.11.1",
-    "firebase": "4.0.0",
+    "firebase": "4.1.1",
     "firebase-tools": "3.9.0",
     "glob": "7.1.2",
     "google-protobuf": "3.3.0",
