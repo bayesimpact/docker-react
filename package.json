@@ -80,7 +80,7 @@
     "react-router-redux": "4.0.8",
     "react-tap-event-plugin": "2.0.1",
     "redux": "3.6.0",
-    "react-visibility-sensor": "3.9.0",
+    "react-visibility-sensor": "3.10.0",
     "redux-devtools-extension": "2.13.2",
     "redux-thunk": "2.2.0",
     "rimraf": "2.6.1",
