@@ -61,7 +61,7 @@
     "normalize.css": "7.0.0",
     "null-loader": "0.1.1",
     "open": "0.0.5",
-    "package-json-validator": "0.6.1",
+    "package-json-validator": "0.6.2",
     "phantomjs-prebuilt": "2.1.14",
     "radium": "0.19.1",
     "raw-loader": "0.5.1",
