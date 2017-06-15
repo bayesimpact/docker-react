@@ -67,7 +67,7 @@
     "raw-loader": "0.5.1",
     "react": "15.6.0",
     "react-addons-test-utils": "15.5.1",
-    "react-addons-transition-group": "15.5.2",
+    "react-addons-transition-group": "15.6.0",
     "react-custom-scrollbars": "4.1.2",
     "react-dom": "15.5.4",
     "react-facebook-login": "3.6.1",
