@@ -63,7 +63,7 @@
     "open": "0.0.5",
     "package-json-validator": "0.6.2",
     "phantomjs-prebuilt": "2.1.14",
-    "radium": "0.19.3",
+    "radium": "0.19.4",
     "raw-loader": "0.5.1",
     "react": "15.6.1",
     "react-addons-test-utils": "15.6.0",
