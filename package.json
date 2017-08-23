@@ -79,19 +79,23 @@
     "react-router": "4.1.1",
     "react-router-redux": "4.0.8",
     "react-tap-event-plugin": "2.0.1",
-    "redux": "3.6.0",
     "react-visibility-sensor": "3.10.0",
+    "redux": "3.6.0",
     "redux-devtools-extension": "2.13.2",
     "redux-thunk": "2.2.0",
+    "redux-raven-middleware": "1.2.0",
     "rimraf": "2.6.1",
     "rn-redux-mixpanel": "1.1.9",
     "sha1": "1.1.1",
+    "smoothscroll-polyfill": "0.3.5",
+    "react-visibility-sensor": "3.10.0",
     "style-loader": "0.18.2",
     "svgo-loader": "1.2.1",
     "underscore": "1.8.3",
     "unused-files-webpack-plugin": "3.0.2",
     "url-loader": "0.5.9",
     "webpack": "2.6.1",
-    "webpack-dev-server": "2.4.5"
+    "webpack-dev-server": "2.4.5",
+    "webpack-pwa-manifest": "3.2.0"
   }
 }
