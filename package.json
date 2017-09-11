@@ -83,7 +83,7 @@
     "redux-devtools-extension": "2.13.2",
     "redux-thunk": "2.2.0",
     "redux-raven-middleware": "1.2.0",
-    "rimraf": "2.6.1",
+    "rimraf": "2.6.2",
     "rn-redux-mixpanel": "1.1.9",
     "sha1": "1.1.1",
     "smoothscroll-polyfill": "0.3.6",
