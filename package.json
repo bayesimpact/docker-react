@@ -94,6 +94,6 @@
     "url-loader": "0.5.9",
     "webpack": "2.6.1",
     "webpack-dev-server": "2.6.1",
-    "webpack-pwa-manifest": "3.2.0"
+    "webpack-pwa-manifest": "3.3.0"
   }
 }
