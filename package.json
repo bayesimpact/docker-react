@@ -65,7 +65,7 @@
     "phantomjs-prebuilt": "2.1.15",
     "radium": "0.19.4",
     "raw-loader": "0.5.1",
-    "react": "15.6.1",
+    "react": "15.6.2",
     "react-addons-test-utils": "15.6.0",
     "react-custom-scrollbars": "4.1.2",
     "react-dom": "15.6.1",
