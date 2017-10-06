@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "clean": "rimraf dist/*",
-    "dist": "npm run clean && npm run copy && REACT_WEBPACK_ENV=dist webpack --bail",
+    "dist": "npm run clean && REACT_WEBPACK_ENV=dist webpack --bail",
     "start": "REACT_WEBPACK_ENV=dev node server.js"
   },
   "dependencies": {
