@@ -57,7 +57,7 @@
     "minimist": "1.2.0",
     "mocha": "3.5.3",
     "mocha-junit-reporter": "1.15.0",
-    "moment": "2.19.0",
+    "moment": "2.19.1",
     "normalize.css": "7.0.0",
     "null-loader": "0.1.1",
     "open": "0.0.5",
