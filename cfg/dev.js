@@ -36,7 +36,13 @@ config.module.rules.push({
     path.join(__dirname, '/../src'),
   ],
   test: /\.(js|jsx)$/,
-  use: ['react-hot-loader', 'babel-loader'],
+  use: {
+    loader: 'babel-loader',
+    options: {
+      plugins: ['react-hot-loader/babel'],
+      presets: [['es2015', {modules: false}], 'react', 'stage-0'],
+    },
+  },
 })
 
 module.exports = config
