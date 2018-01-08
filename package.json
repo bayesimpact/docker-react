@@ -64,7 +64,7 @@
     "open": "0.0.5",
     "package-json-validator": "0.6.2",
     "puppeteer": "0.13.0",
-    "query-string": "5.0.0",
+    "query-string": "5.0.1",
     "radium": "0.19.6",
     "raw-loader": "0.5.1",
     "react": "16.2.0",
