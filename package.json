@@ -24,7 +24,7 @@
     "detect-browser": "2.0.0",
     "es6-promise": "4.2.2",
     "eslint": "4.14.0",
-    "eslint-import-resolver-webpack": "0.8.3",
+    "eslint-import-resolver-webpack": "0.8.4",
     "eslint-loader": "1.9.0",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jsx-a11y": "6.0.2",
