@@ -23,7 +23,7 @@
     "copyfiles": "1.2.0",
     "css-loader": "0.28.4",
     "detect-browser": "2.0.0",
-    "es6-promise": "4.2.2",
+    "es6-promise": "4.2.4",
     "eslint": "4.16.0",
     "eslint-import-resolver-webpack": "0.8.4",
     "eslint-loader": "1.9.0",
