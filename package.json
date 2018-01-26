@@ -59,7 +59,7 @@
     "mdi-react": "2.1.19",
     "minimist": "1.2.0",
     "mocha": "5.0.0",
-    "mocha-junit-reporter": "1.16.0",
+    "mocha-junit-reporter": "1.17.0",
     "moment": "2.20.1",
     "normalize.css": "7.0.0",
     "null-loader": "0.1.1",
