@@ -107,7 +107,7 @@
     "url-loader": "0.6.2",
     "webpack": "3.11.0",
     "webpack-dev-server": "2.9.7",
-    "webpack-pwa-manifest": "3.3.2",
+    "webpack-pwa-manifest": "3.6.0",
     "yarn-lazy-lock": "0.1.0"
   }
 }
