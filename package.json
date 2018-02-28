@@ -97,7 +97,7 @@
     "rimraf": "2.6.2",
     "rn-redux-mixpanel": "1.3.0",
     "sha1": "1.1.1",
-    "smoothscroll-polyfill": "0.4.0",
+    "smoothscroll-polyfill": "0.4.3",
     "style-loader": "0.18.2",
     "svg-fill-loader": "0.0.8",
     "svgo": "1.0.3",
