@@ -59,7 +59,7 @@
     "lodash": "4.17.5",
     "mdi-react": "2.1.19",
     "minimist": "1.2.0",
-    "mocha": "5.0.2",
+    "mocha": "5.0.4",
     "mocha-junit-reporter": "1.17.0",
     "moment": "2.21.0",
     "normalize.css": "8.0.0",
