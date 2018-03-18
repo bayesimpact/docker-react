@@ -4,6 +4,7 @@ var srcPath = path.join(__dirname, '/../src/')
 module.exports = {
   devtool: 'eval',
   entry: './test/loadtests.js',
+  mode: 'development',
   module: {
     rules: [
       {

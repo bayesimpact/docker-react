@@ -12,6 +12,7 @@ var config = _.merge({
     'webpack-dev-server/client?http://0.0.0.0:0',
     'webpack/hot/only-dev-server',
   ].concat(baseConfig.entry),
+  mode: 'development',
   output: {
     filename: 'app.js',
     path: __dirname,

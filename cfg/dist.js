@@ -11,6 +11,7 @@ var config = _.merge({
   entry: [
     'babel-polyfill',
   ].concat(baseConfig.entry),
+  mode: 'production',
   output: {
     filename: 'app.[hash].js',
     path: path.join(__dirname, '/../dist/assets'),
@@ -23,8 +24,6 @@ Array.prototype.push.apply(config.plugins, [
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': '"production"',
   }),
-  // Minimize all JavaScript files to reduce their size (renames variable names, etc).
-  new webpack.optimize.UglifyJsPlugin(),
   // Only keep the fr locale from the moment library.
   new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /fr/),
   // Embed the JavaScript in the index.html page.
@@ -42,9 +41,6 @@ Array.prototype.push.apply(config.plugins, [
       removeStyleLinkTypeAttributes: true,
     },
   }),
-  // When there are errors while compiling this plugin skips the emitting phase,
-  // so there are no assets emitted that include errors.
-  new webpack.NoEmitOnErrorsPlugin(),
 ])
 
 config.module.rules.push({
