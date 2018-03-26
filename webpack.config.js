@@ -41,4 +41,6 @@ function buildConfig(env) {
   return configs[usedEnv]
 }
 
+process.traceDeprecation = true
+
 module.exports = buildConfig(process.env.REACT_WEBPACK_ENV)
