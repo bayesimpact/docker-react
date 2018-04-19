@@ -35,7 +35,7 @@
     "eslint-plugin-you-dont-need-lodash-underscore": "6.3.1",
     "exports-loader": "0.7.0",
     "file-loader": "1.1.11",
-    "firebase": "4.12.1",
+    "firebase": "4.13.0",
     "firebase-tools": "3.18.4",
     "glob": "7.1.2",
     "google-protobuf": "3.5.0",
