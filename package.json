@@ -7,7 +7,7 @@
     "start": "REACT_WEBPACK_ENV=dev node server.js"
   },
   "dependencies": {
-    "airtable": "0.5.4",
+    "airtable": "0.5.5",
     "algoliasearch": "3.27.0",
     "amplitude-js": "4.2.1",
     "autocomplete.js": "0.30.0",
