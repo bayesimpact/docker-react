@@ -23,7 +23,7 @@
     "chai": "4.1.2",
     "copyfiles": "2.0.0",
     "css-loader": "0.28.11",
-    "detect-browser": "2.4.0",
+    "detect-browser": "2.5.0",
     "es6-promise": "4.2.4",
     "es6-set-proptypes": "1.0.0",
     "eslint": "4.19.1",
