@@ -89,7 +89,6 @@
     "react-select": "1.2.1",
     "react-share": "2.1.1",
     "react-swipeable": "4.2.2",
-    "react-tap-event-plugin": "3.0.2",
     "react-visibility-sensor": "3.11.0",
     "redux": "4.0.0",
     "redux-devtools-extension": "2.13.2",
