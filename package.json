@@ -69,7 +69,7 @@
     "package-json-validator": "0.6.3",
     "puppeteer": "1.5.0",
     "query-string": "6.1.0",
-    "radium": "0.24.0",
+    "radium": "0.24.1",
     "randexp": "0.4.9",
     "raw-loader": "0.5.1",
     "react": "16.4.1",
