@@ -28,7 +28,7 @@
     "es6-set-proptypes": "1.0.0",
     "eslint": "5.0.1",
     "eslint-import-resolver-webpack": "0.10.1",
-    "eslint-loader": "2.0.0",
+    "eslint-loader": "2.1.0",
     "eslint-plugin-import": "2.13.0",
     "eslint-plugin-jsx-a11y": "6.1.0",
     "eslint-plugin-react": "7.10.0",
