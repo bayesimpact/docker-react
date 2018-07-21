@@ -70,7 +70,7 @@
     "puppeteer": "1.6.0",
     "query-string": "6.1.0",
     "radium": "0.24.1",
-    "randexp": "0.4.9",
+    "randexp": "0.5.3",
     "raw-loader": "0.5.1",
     "react": "16.4.1",
     "react-addons-test-utils": "15.6.2",
