@@ -109,7 +109,7 @@
     "url-loader": "1.0.1",
     "webpack": "4.16.3",
     "webpack-cli": "3.1.0",
-    "webpack-dev-server": "3.1.5",
+    "webpack-dev-server": "3.1.6",
     "webpack-pwa-manifest": "3.7.1",
     "yarn-lazy-lock": "0.1.1"
   }
