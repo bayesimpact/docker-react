@@ -74,7 +74,7 @@
     "prop-types": "15.6.2",
     "puppeteer": "1.10.0",
     "query-string": "6.2.0",
-    "radium": "0.24.1",
+    "radium": "0.25.0",
     "randexp": "0.5.3",
     "raw-loader": "0.5.1",
     "react": "16.4.1",
