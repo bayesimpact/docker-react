@@ -22,7 +22,7 @@
     "browser-metrics": "0.1.4",
     "chai": "4.2.0",
     "copyfiles": "2.1.0",
-    "css-loader": "1.0.0",
+    "css-loader": "1.0.1",
     "detect-browser": "3.0.1",
     "es6-promise": "4.2.5",
     "es6-set-proptypes": "1.0.0",
