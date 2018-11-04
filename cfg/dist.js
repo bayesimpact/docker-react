@@ -9,7 +9,7 @@ var config = _.merge({
   cache: false,
   devtool: 'sourcemap',
   entry: [
-    'babel-polyfill',
+    '@babel/polyfill',
   ].concat(baseConfig.entry),
   mode: 'production',
   output: {

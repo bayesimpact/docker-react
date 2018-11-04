@@ -40,8 +40,12 @@ config.module.rules.push({
   use: {
     loader: 'babel-loader',
     options: {
-      plugins: ['react-hot-loader/babel'],
-      presets: [['es2015', {modules: false}], 'react', 'stage-0'],
+      plugins: [
+        'react-hot-loader/babel',
+        '@babel/plugin-syntax-dynamic-import',
+        ['@babel/plugin-proposal-class-properties', {loose: false}],
+      ],
+      presets: [['@babel/env', {modules: false}], '@babel/react'],
     },
   },
 })
