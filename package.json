@@ -9,7 +9,7 @@
   "dependencies": {
     "airtable": "0.5.7",
     "algoliasearch": "3.29.0",
-    "amplitude-js": "4.5.0",
+    "amplitude-js": "4.5.2",
     "autocomplete.js": "0.30.0",
     "@babel/core": "7.1.5",
     "@babel/polyfill": "7.0.0",
