@@ -58,7 +58,7 @@
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "3.0.5",
     "lodash": "4.17.11",
-    "mdi-react": "4.4.0",
+    "mdi-react": "5.0.0",
     "minimist": "1.2.0",
     "mocha": "5.2.0",
     "mocha-junit-reporter": "1.18.0",
