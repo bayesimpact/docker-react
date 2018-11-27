@@ -83,7 +83,7 @@
     "react-custom-scrollbars": "4.2.1",
     "react-dom": "16.6.3",
     "react-facebook-login": "4.1.1",
-    "react-google-login": "3.2.1",
+    "react-google-login": "4.0.0",
     "react-height": "3.0.0",
     "react-hot-loader": "4.3.5",
     "react-lazyload": "2.3.0",
