@@ -97,7 +97,7 @@
     "react-share": "2.3.1",
     "react-swipeable": "4.3.0",
     "react-test-renderer": "16.4.1",
-    "react-twitter-embed": "1.2.1",
+    "react-twitter-embed": "2.0.4",
     "react-visibility-sensor": "3.11.1",
     "redux": "4.0.1",
     "redux-devtools-extension": "2.13.5",
