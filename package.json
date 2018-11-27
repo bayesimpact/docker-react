@@ -110,7 +110,7 @@
     "rn-redux-mixpanel": "1.3.0",
     "sha1": "1.1.1",
     "smoothscroll-polyfill": "0.4.3",
-    "style-loader": "0.21.0",
+    "style-loader": "0.23.1",
     "svg-transform-loader": "1.0.0",
     "svgo": "1.0.5",
     "svgo-loader": "2.1.0",
