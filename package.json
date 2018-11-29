@@ -120,6 +120,6 @@
     "webpack-dev-server": "3.1.7",
     "webpack-pwa-manifest": "3.7.1",
     "whatwg-fetch": "3.0.0",
-    "yarn-lazy-lock": "0.1.1"
+    "yarn-lazy-lock": "0.1.2"
   }
 }
