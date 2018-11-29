@@ -115,7 +115,7 @@
     "url-loader": "1.1.2",
     "webpack": "4.26.1",
     "webpack-cli": "3.1.2",
-    "webpack-dev-server": "3.1.7",
+    "webpack-dev-server": "3.1.10",
     "webpack-pwa-manifest": "3.7.1",
     "whatwg-fetch": "3.0.0",
     "yarn-lazy-lock": "0.1.2"
