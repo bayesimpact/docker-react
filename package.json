@@ -23,7 +23,7 @@
     "chai": "4.2.0",
     "connected-react-router": "6.0.0-beta.1",
     "copyfiles": "2.1.0",
-    "css-loader": "1.0.1",
+    "css-loader": "2.0.0",
     "detect-browser": "3.0.1",
     "es6-promise": "4.2.5",
     "es6-set-proptypes": "1.0.0",
