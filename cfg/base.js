@@ -1,5 +1,8 @@
 // This file is the base configuration for the [webpack module bundler](https://webpack.github.io/).
 // Use this file to edit settings that are the same for all environments (dev, test, prod).
+const imageMinJpg = require('imagemin-mozjpeg')
+const imageMinPng = require('imagemin-optipng')
+const imageMinSvg = require('imagemin-svgo')
 
 var path = require('path')
 var webpack = require('webpack')
@@ -30,20 +33,52 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|jpg|gif|eot|ttf|woff2?)(\?[a-z0-9=&.]+)?$/,
-        use: 'url-loader?limit=8192',
+        test: /\.(gif|eot|ttf|woff2?)(\?[a-z0-9=&.]+)?$/,
+        use: {
+          loader: 'url-loader',
+          query: {limit: 8192},
+        },
+      },
+      {
+        test: /\.(png|jpg)(\?[a-z0-9=&.]+)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            query: {limit: 8192},
+          },
+          {
+            loader: 'img-loader',
+            options: {
+              enabled: process.env.REACT_WEBPACK_ENV === 'dist',
+              plugins: [
+                imageMinPng({}),
+                imageMinJpg({}),
+              ],
+            },
+          },
+        ],
       },
       {
         test: /\.svg(\?[a-z0-9=&.]+)?$/,
         use: [
-          'url-loader?limit=8192',
-          'svgo-loader?' + JSON.stringify({
-            plugins: [
-              {removeTitle: true},
-              {removeComments: true},
-              {removeDesc: true},
-            ],
-          }),
+          {
+            loader: 'url-loader',
+            query: {limit: 8192},
+          },
+          'svg-transform-loader',
+          {
+            loader: 'img-loader',
+            options: {
+              enabled: process.env.REACT_WEBPACK_ENV === 'dist',
+              plugins: [
+                imageMinSvg({
+                  removeComments: true,
+                  removeDesc: true,
+                  removeTitle: true,
+                }),
+              ],
+            },
+          },
         ],
       },
       {
