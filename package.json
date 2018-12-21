@@ -39,7 +39,7 @@
     "exports-loader": "0.7.0",
     "file-loader": "2.0.0",
     "firebase": "5.7.2",
-    "firebase-tools": "6.2.0",
+    "firebase-tools": "6.2.1",
     "glob": "7.1.3",
     "google-protobuf": "3.6.1",
     "html-webpack-plugin": "3.2.0",
