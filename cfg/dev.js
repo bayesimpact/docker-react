@@ -24,6 +24,9 @@ Array.prototype.push.apply(config.plugins, [
   new webpack.LoaderOptionsPlugin({
     debug: true,
   }),
+  new webpack.DefinePlugin({
+    'process.env.ASSET_PATH': JSON.stringify(config.output.publicPath),
+  }),
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NamedModulesPlugin(),
   // Embed the JavaScript in the index.html page.

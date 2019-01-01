@@ -22,6 +22,7 @@ var config = _.merge({
 Array.prototype.push.apply(config.plugins, [
   // Define free variables -> global constants.
   new webpack.DefinePlugin({
+    'process.env.ASSET_PATH': JSON.stringify(config.output.publicPath),
     'process.env.NODE_ENV': '"production"',
   }),
   // Only keep the fr locale from the moment library.
