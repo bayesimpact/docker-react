@@ -1,9 +1,10 @@
-var path = require('path')
-var webpack = require('webpack')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
-var _ = require('lodash')
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const WebpackPwaManifest = require('webpack-pwa-manifest')
+const _ = require('lodash')
 
-var baseConfig = require('./base')
+const baseConfig = require('./base')
 
 var config = _.merge({
   cache: false,
@@ -19,30 +20,34 @@ var config = _.merge({
   },
 }, _.omit(baseConfig, 'entry'))
 
-Array.prototype.push.apply(config.plugins, [
-  // Define free variables -> global constants.
-  new webpack.DefinePlugin({
-    'process.env.ASSET_PATH': JSON.stringify(config.output.publicPath),
-    'process.env.NODE_ENV': '"production"',
-  }),
-  // Only keep the fr locale from the moment library.
-  new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /fr/),
-  // Embed the JavaScript in the index.html page.
-  new HtmlWebpackPlugin({
-    filename: '../index.html',
-    minify: {
-      collapseWhitespace: true,
-      decodeEntities: true,
-      minifyCSS: true,
-      removeAttributeQuotes: true,
-      removeComments: true,
-      removeOptionalTags: true,
-      removeRedundantAttributes: true,
-      removeScriptTypeAttributes: true,
-      removeStyleLinkTypeAttributes: true,
-    },
-  }),
-])
+config.plugins = [].concat(
+  config.plugins.filter(p => !(p instanceof WebpackPwaManifest)),
+  [
+    // Define free variables -> global constants.
+    new webpack.DefinePlugin({
+      'process.env.ASSET_PATH': JSON.stringify(config.output.publicPath),
+      'process.env.NODE_ENV': '"production"',
+    }),
+    // Only keep the fr locale from the moment library.
+    new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /fr/),
+    // Embed the JavaScript in the index.html page.
+    new HtmlWebpackPlugin({
+      filename: '../index.html',
+      minify: {
+        collapseWhitespace: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        removeAttributeQuotes: true,
+        removeComments: true,
+        removeOptionalTags: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+      },
+    }),
+  ],
+  config.plugins.filter(p => p instanceof WebpackPwaManifest),
+)
 
 config.module.rules.push({
   include: [

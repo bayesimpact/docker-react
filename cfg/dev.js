@@ -1,9 +1,10 @@
-var path = require('path')
-var webpack = require('webpack')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
-var _ = require('lodash')
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const WebpackPwaManifest = require('webpack-pwa-manifest')
+const _ = require('lodash')
 
-var baseConfig = require('./base')
+const baseConfig = require('./base')
 
 var config = _.merge({
   cache: true,
@@ -20,19 +21,23 @@ var config = _.merge({
   },
 }, _.omit(baseConfig, 'entry'))
 
-Array.prototype.push.apply(config.plugins, [
-  new webpack.LoaderOptionsPlugin({
-    debug: true,
-  }),
-  new webpack.DefinePlugin({
-    'process.env.ASSET_PATH': JSON.stringify(config.output.publicPath),
-  }),
-  new webpack.HotModuleReplacementPlugin(),
-  new webpack.NamedModulesPlugin(),
-  // Embed the JavaScript in the index.html page.
-  new HtmlWebpackPlugin(),
-  new webpack.NoEmitOnErrorsPlugin(),
-])
+config.plugins = [].concat(
+  config.plugins.filter(p => !(p instanceof WebpackPwaManifest)),
+  [
+    new webpack.LoaderOptionsPlugin({
+      debug: true,
+    }),
+    new webpack.DefinePlugin({
+      'process.env.ASSET_PATH': JSON.stringify(config.output.publicPath),
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin(),
+    // Embed the JavaScript in the index.html page.
+    new HtmlWebpackPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
+  ],
+  config.plugins.filter(p => p instanceof WebpackPwaManifest),
+)
 
 // Add needed rules.
 config.module.rules.push({
