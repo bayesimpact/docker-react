@@ -82,7 +82,7 @@
     "react": "16.8.0",
     "react-addons-test-utils": "15.6.2",
     "react-custom-scrollbars": "4.2.1",
-    "react-dom": "16.8.0",
+    "react-dom": "16.8.1",
     "react-facebook-login": "4.1.1",
     "react-google-login": "5.0.0",
     "react-height": "3.0.0",
