@@ -95,7 +95,7 @@
     "react-router-dom": "4.3.1",
     "react-select": "2.3.0",
     "react-share": "2.4.0",
-    "react-swipeable": "4.3.2",
+    "react-swipeable": "5.0.0",
     "react-test-renderer": "16.8.1",
     "react-twitter-embed": "2.0.4",
     "react-visibility-sensor": "5.0.2",
