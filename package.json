@@ -111,7 +111,7 @@
     "sha1": "1.1.1",
     "smoothscroll-polyfill": "0.4.3",
     "style-loader": "0.23.1",
-    "svg-transform-loader": "2.0.4",
+    "svg-transform-loader": "2.0.5",
     "unused-files-webpack-plugin": "3.4.0",
     "url-loader": "1.1.2",
     "webpack": "4.29.3",
