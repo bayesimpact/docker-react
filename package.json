@@ -28,7 +28,7 @@
     "emoji-regex": "7.0.3",
     "es6-promise": "4.2.5",
     "es6-set-proptypes": "1.0.0",
-    "eslint": "5.14.0",
+    "eslint": "5.13.0",
     "eslint-import-resolver-webpack": "0.11.0",
     "eslint-loader": "2.1.2",
     "eslint-plugin-import": "2.16.0",
