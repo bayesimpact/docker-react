@@ -10,7 +10,7 @@
     "airtable": "0.5.9",
     "algoliasearch": "3.32.1",
     "amplitude-js": "5.0.0",
-    "autocomplete.js": "0.35.0",
+    "autocomplete.js": "0.36.0",
     "@babel/core": "7.4.0",
     "@babel/polyfill": "7.4.0",
     "@babel/preset-env": "7.4.2",
