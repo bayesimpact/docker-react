@@ -76,7 +76,7 @@
     "package-json-validator": "0.6.3",
     "prop-types": "15.7.2",
     "puppeteer": "1.12.2",
-    "query-string": "6.2.0",
+    "query-string": "6.3.0",
     "radium": "0.25.1",
     "randexp": "0.5.3",
     "raw-loader": "1.0.0",
