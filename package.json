@@ -18,7 +18,7 @@
     "@babel/preset-typescript": "7.3.3",
     "@babel/plugin-proposal-class-properties": "7.4.0",
     "@babel/plugin-syntax-dynamic-import": "7.2.0",
-    "@hot-loader/react-dom": "16.8.5",
+    "@hot-loader/react-dom": "16.8.6",
     "@mysticatea/eslint-plugin": "9.0.1",
     "@typescript-eslint/eslint-plugin": "1.5.0",
     "@typescript-eslint/parser": "1.5.0",
