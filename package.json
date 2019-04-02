@@ -12,7 +12,7 @@
     "amplitude-js": "5.2.2",
     "autocomplete.js": "0.36.0",
     "@babel/core": "7.4.3",
-    "@babel/polyfill": "7.4.0",
+    "@babel/polyfill": "7.4.3",
     "@babel/preset-env": "7.4.3",
     "@babel/preset-react": "7.0.0",
     "@babel/preset-typescript": "7.3.3",
