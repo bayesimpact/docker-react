@@ -34,7 +34,7 @@
     "es6-promise": "4.2.6",
     "es6-set-proptypes": "1.0.0",
     "eslint": "5.16.0",
-    "eslint-import-resolver-webpack": "0.11.0",
+    "eslint-import-resolver-webpack": "0.11.1",
     "eslint-loader": "2.1.2",
     "eslint-plugin-import": "2.16.0",
     "eslint-plugin-jsx-a11y": "6.2.1",
