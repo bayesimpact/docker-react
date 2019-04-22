@@ -19,7 +19,7 @@
     "@babel/plugin-proposal-class-properties": "7.4.0",
     "@babel/plugin-syntax-dynamic-import": "7.2.0",
     "@hot-loader/react-dom": "16.8.6",
-    "@mysticatea/eslint-plugin": "9.0.1",
+    "@mysticatea/eslint-plugin": "10.0.2",
     "@typescript-eslint/eslint-plugin": "1.7.0",
     "@typescript-eslint/parser": "1.7.0",
     "babel-eslint": "10.0.1",
