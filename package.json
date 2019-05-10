@@ -22,7 +22,7 @@
     "@mysticatea/eslint-plugin": "10.0.3",
     "@types/node": "11.11.4",
     "@types/react-loadable": "5.5.1",
-    "@types/react-router": "4.4.5",
+    "@types/react-router": "5.0.0",
     "@types/react-select": "2.0.17",
     "@types/webpack-env": "1.13.9",
     "@typescript-eslint/eslint-plugin": "1.7.0",
