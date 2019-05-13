@@ -84,7 +84,6 @@
     "moment": "2.24.0",
     "normalize.css": "8.0.1",
     "null-loader": "1.0.0",
-    "open": "6.2.0",
     "package-json-validator": "0.6.3",
     "prop-types": "15.7.2",
     "puppeteer": "1.15.0",
