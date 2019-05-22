@@ -26,7 +26,7 @@
     "@types/react-loadable": "5.5.1",
     "@types/react-redux": "7.0.9",
     "@types/react-router": "5.0.1",
-    "@types/react-select": "2.0.18",
+    "@types/react-select": "2.0.19",
     "@types/sha1": "1.1.2",
     "@types/webpack-env": "1.13.9",
     "@typescript-eslint/eslint-plugin": "1.9.0",
