@@ -38,7 +38,7 @@
     "connected-react-router": "6.4.0",
     "copyfiles": "2.1.0",
     "css-loader": "2.1.1",
-    "detect-browser": "4.5.0",
+    "detect-browser": "4.6.0",
     "emoji-regex": "8.0.0",
     "es6-promise": "4.2.6",
     "es6-set-proptypes": "1.0.0",
