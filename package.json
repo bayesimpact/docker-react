@@ -115,7 +115,7 @@
     "react-swipeable": "5.2.3",
     "react-test-renderer": "16.8.6",
     "react-twitter-embed": "2.0.8",
-    "react-visibility-sensor": "5.1.0",
+    "react-visibility-sensor": "5.1.1",
     "redux": "4.0.3",
     "redux-devtools-extension": "2.13.8",
     "redux-mock-store": "1.5.3",
