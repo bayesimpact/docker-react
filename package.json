@@ -28,7 +28,7 @@
     "@types/react-router": "5.0.1",
     "@types/react-select": "3.0.0",
     "@types/sha1": "1.1.2",
-    "@types/webpack-env": "1.13.9",
+    "@types/webpack-env": "1.14.0",
     "@typescript-eslint/eslint-plugin": "1.9.0",
     "@typescript-eslint/parser": "1.9.0",
     "babel-eslint": "10.0.1",
