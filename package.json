@@ -36,7 +36,7 @@
     "browser-metrics": "0.1.4",
     "chai": "4.2.0",
     "connected-react-router": "6.4.0",
-    "copyfiles": "2.1.0",
+    "copyfiles": "2.1.1",
     "css-loader": "2.1.1",
     "detect-browser": "4.5.0",
     "emoji-regex": "8.0.0",
