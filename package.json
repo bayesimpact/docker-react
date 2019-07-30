@@ -79,7 +79,7 @@
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "4.0.2",
     "local-storage-fallback": "4.1.1",
-    "lodash": "4.17.11",
+    "lodash": "4.17.15",
     "mdi-react": "5.5.0",
     "minimist": "1.2.0",
     "mocha": "6.2.0",
