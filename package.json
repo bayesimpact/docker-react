@@ -114,7 +114,7 @@
     "react-select": "3.0.4",
     "react-share": "3.0.0",
     "react-swipeable": "5.4.0",
-    "react-test-renderer": "16.8.6",
+    "react-test-renderer": "16.9.0",
     "react-twitter-embed": "2.0.8",
     "react-visibility-sensor": "5.1.1",
     "redux": "4.0.4",
