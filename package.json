@@ -32,7 +32,7 @@
     "@types/webpack-env": "1.14.0",
     "@typescript-eslint/eslint-plugin": "1.13.0",
     "@typescript-eslint/parser": "1.13.0",
-    "babel-eslint": "10.0.2",
+    "babel-eslint": "10.0.3",
     "babel-loader": "8.0.6",
     "browser-metrics": "0.1.4",
     "chai": "4.2.0",
