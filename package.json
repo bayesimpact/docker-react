@@ -53,7 +53,7 @@
     "eslint-plugin-unicorn": "10.0.0",
     "eslint-plugin-you-dont-need-lodash-underscore": "6.7.0",
     "exports-loader": "0.7.0",
-    "file-loader": "4.1.0",
+    "file-loader": "4.2.0",
     "firebase": "6.5.0",
     "firebase-tools": "7.3.1",
     "glob": "7.1.4",
