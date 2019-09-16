@@ -20,9 +20,14 @@ function package_version() {
 
 function update_dependency() {
     local name=$1
-    local last_version=$(npm show $name version)
+    local last_version=$2
+    if [ -z "$last_version" ]; then
+        local last_version=$(npm show $name version)
+    fi
     local current_version=$(package_version $name)
     local branch_name="auto_$name"
+    local remote="origin/$USERNAME-$branch_name"
+    local has_remote=$(git rev-parse --verify $remote &> /dev/null)
     if [[ $current_version == $last_version ]]; then
         echo "$name is up-to-date"
         return
@@ -30,8 +35,7 @@ function update_dependency() {
     if ! git rev-parse --verify $branch_name &> /dev/null; then
         # Specific local branch for package does not exist, let's check for a remote.
         local branch_opts=""
-        local remote="origin/$USERNAME-$branch_name"
-        if git rev-parse --verify $remote &> /dev/null; then
+        if [ -n "$has_remote" ]; then
             branch_opts="--track $remote"
         fi
         # Create a local branch, maybe tracking a pre-existing remote.
@@ -46,13 +50,19 @@ function update_dependency() {
     current_version=$(package_version $name)
     if [[ $current_version == $last_version ]]; then
         echo "$name is up-to-date on branch $branch_name".
-        git review -f &> /dev/null
+        if [ -n "$has_remote" ] && [ "$(git rev-parse --verify HEAD)" != "$has_remote" ]; then
+            git review -f
+        fi
         git checkout -q master &> /dev/null
         return
     fi
+    local review_opt=''
+    if [ -n "$has_remote" ]; then
+        review_opt='-f'
+    fi
     package_version $name $last_version
     git commit -qam "[AutoUpdate] Update dependency $name to version $last_version." &> /dev/null
-    git review -f &> /dev/null
+    git review $review_opt
     git checkout -q master &> /dev/null
 }
 
@@ -66,6 +76,9 @@ if [ -n "$1" ]; then
     update_dependency $1
     exit 0
 fi
-for dep in $(jq -r '.dependencies | keys[]' package.json); do
-    update_dependency $dep
+
+update_list=$(npm outdated --json | jq -r 'to_entries|map(select(.value.wanted!=.value.latest))|map(.key,.value.latest)|.[]')
+update_list=($update_list)
+for (( i=0; i<${#update_list[@]} ; i+=2 )) ; do
+    update_dependency "${update_list[$i]}" "${update_list[$i+1]}"
 done
