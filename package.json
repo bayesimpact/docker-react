@@ -30,7 +30,7 @@
     "@types/react-select": "3.0.4",
     "@types/sha1": "1.1.2",
     "@types/webpack-env": "1.14.0",
-    "@typescript-eslint/eslint-plugin": "2.2.0",
+    "@typescript-eslint/eslint-plugin": "2.3.0",
     "@typescript-eslint/parser": "1.13.0",
     "babel-eslint": "10.0.3",
     "babel-loader": "8.0.6",
