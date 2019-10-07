@@ -58,7 +58,7 @@
     "firebase": "6.6.1",
     "firebase-tools": "7.3.2",
     "glob": "7.1.4",
-    "google-protobuf": "3.10.0-rc.1",
+    "google-protobuf": "3.10.0",
     "html-webpack-plugin": "3.2.0",
     "imagemin": "7.0.0",
     "imagemin-mozjpeg": "8.0.0",
