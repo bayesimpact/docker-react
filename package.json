@@ -7,11 +7,11 @@
     "start": "REACT_WEBPACK_ENV=dev node server.js"
   },
   "dependencies": {
-    "@babel/core": "7.6.0",
+    "@babel/core": "7.6.2",
     "@babel/plugin-proposal-class-properties": "7.5.5",
     "@babel/plugin-syntax-dynamic-import": "7.2.0",
     "@babel/polyfill": "7.6.0",
-    "@babel/preset-env": "7.6.0",
+    "@babel/preset-env": "7.6.2",
     "@babel/preset-react": "7.0.0",
     "@babel/preset-typescript": "7.6.0",
     "@hot-loader/react-dom": "16.8.6",
