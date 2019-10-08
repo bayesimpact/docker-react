@@ -2,6 +2,7 @@
 #
 # Requires jq, npm.
 
+readonly COMMIT_AUTHOR="Bayes Impact Bot <pascal+bayes-github@bayesimpact.org>"
 readonly USERNAME=$(git config user.email | sed -e "s/@.*$//")
 
 # Get or update the version of a given dependency in package.json.
@@ -61,7 +62,7 @@ function update_dependency() {
         review_opt='-f'
     fi
     package_version $name $last_version
-    git commit -qam "[AutoUpdate] Update dependency $name to version $last_version." &> /dev/null
+    git commit -qam "[AutoUpdate] Update dependency $name to version $last_version." --author="$COMMIT_AUTHOR" &> /dev/null
     git review $review_opt
     git checkout -q master &> /dev/null
 }
