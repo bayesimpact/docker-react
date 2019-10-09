@@ -15,3 +15,31 @@ jobs:
       - run:
           name: Check that the Dockerfile builds properly.
           command: docker build .
+
+  update:
+    docker:
+      - image: bayesimpact/circleci
+    steps:
+      - checkout
+
+      - run:
+          name: Create or update pull requests with new versions of packages.
+          command: bash -x doppins.sh
+
+
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - build
+      - update
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - update
