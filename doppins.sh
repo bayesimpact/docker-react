@@ -6,6 +6,11 @@ readonly COMMIT_AUTHOR="Bayes Impact Bot <pascal+bayes-github@bayesimpact.org>"
 readonly REMOTE_BRANCH_PREFIX="bot"
 readonly REMOTE_REPO="origin"
 
+if [ -n "$GITHUB_TOKEN" ]; then
+    readonly GIT_ORIGIN_WITH_WRITE_PERMISSION=https://$GITHUB_TOKEN@github.com/bayesimpact/docker-react.git
+    git remote set-url "$REMOTE_REPO" "$GIT_ORIGIN_WITH_WRITE_PERMISSION"
+fi
+
 # Get or update the version of a given dependency in package.json.
 # If a second argument is given, updates the version to this value.
 # If no second argument is given, returns the current version.
