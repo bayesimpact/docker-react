@@ -1,11 +1,4 @@
 {
-  "name": "bayesimpact-react",
-  "version": "0.0.1",
-  "scripts": {
-    "clean": "rimraf dist/*",
-    "dist": "npm run clean && REACT_WEBPACK_ENV=dist webpack --bail",
-    "start": "REACT_WEBPACK_ENV=dev node server.js"
-  },
   "dependencies": {
     "@babel/core": "7.6.0",
     "@babel/plugin-proposal-class-properties": "7.5.5",
@@ -141,5 +134,12 @@
     "webpack-pwa-manifest": "4.0.0",
     "whatwg-fetch": "3.0.0",
     "yarn-lazy-lock": "0.1.2"
-  }
+  },
+  "name": "bayesimpact-react",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "dist": "npm run clean && REACT_WEBPACK_ENV=dist webpack --bail",
+    "start": "REACT_WEBPACK_ENV=dev node server.js"
+  },
+  "version": "0.0.1"
 }
