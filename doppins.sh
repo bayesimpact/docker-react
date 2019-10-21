@@ -2,7 +2,10 @@
 #
 # Requires hub, jq, npm.
 
-readonly COMMIT_AUTHOR="Bayes Impact Bot <pascal+bayes-github@bayesimpact.org>"
+set -e
+
+git config user.email "pascal+bayes-github@bayesimpact.org"
+git config user.name "Bayes Impact Bot"
 readonly REMOTE_BRANCH_PREFIX="bot"
 readonly REMOTE_REPO="origin"
 
@@ -66,7 +69,7 @@ function update_dependency() {
     fi
     package_version $name $last_version
     local message="[AutoUpdate] Update dependency $name to version $last_version."
-    git commit -qam "$message" --author="$COMMIT_AUTHOR" &> /dev/null
+    git commit -qam "$message"
     git push -uf $REMOTE_REPO $branch_name:$remote_branch_name
     hub pull-request -m "$message" -h "${remote_branch_name}" | echo
     git checkout -q master &> /dev/null
