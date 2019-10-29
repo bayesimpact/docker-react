@@ -28,6 +28,23 @@ function package_version() {
         mv package_temp package.json
 }
 
+# Regex to a github URL. Only keep the user and repo part.
+readonly GITHUB_URL_REGEX="github\.com/[^/]+/(?:(?!\.git$)[^/#?])+"
+
+function make_package_commit_message() {
+    local name=$1
+    local version=$2
+    echo "[AutoUpdate] Update dependency $name to version $version."
+    local repo=$(npm show $name repository.url | grep -oP $GITHUB_URL_REGEX)
+    if [ -n "$repo" ]; then
+        changelog="https://$repo/tree/master/CHANGELOG.md"
+        if curl --fail -sIo /dev/null $changelog; then
+            echo -e "\nChangelog available at $changelog"
+        fi
+    fi
+    echo -e "\nDocumentation available at $(npm docs --browser none $name | tail -n1)"
+}
+
 function update_dependency() {
     local name=$1
     local last_version=$2
@@ -68,7 +85,7 @@ function update_dependency() {
         return
     fi
     package_version $name $last_version
-    local message="[AutoUpdate] Update dependency $name to version $last_version."
+    local message="$(make_package_commit_message $name $last_version)"
     git commit -qam "$message"
     git push -uf $REMOTE_REPO $branch_name:$remote_branch_name
     hub pull-request -m "$message" -h "${remote_branch_name}" | echo
