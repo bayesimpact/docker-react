@@ -28,6 +28,14 @@ function package_version() {
         mv package_temp package.json
 }
 
+function make_package_commit_message() {
+    local name=$1
+    local version=$2
+    echo "[AutoUpdate] Update dependency $name to version $version."
+    local changelog="$(npm show $name repository.url | sed 's~git://~https://~' | sed 's~\.git$~/blob/master/CHANGELOG.md~')"
+    curl -sIo /dev/null --fail $changelog && echo "" && echo $changelog
+}
+
 function update_dependency() {
     local name=$1
     local last_version=$2
@@ -68,7 +76,7 @@ function update_dependency() {
         return
     fi
     package_version $name $last_version
-    local message="[AutoUpdate] Update dependency $name to version $last_version."
+    local message="$(make_package_commit_message $name $last_version)"
     git commit -qam "$message"
     git push -uf $REMOTE_REPO $branch_name:$remote_branch_name
     hub pull-request -m "$message" -h "${remote_branch_name}" | echo
