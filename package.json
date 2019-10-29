@@ -19,7 +19,7 @@
     "@types/react-select": "3.0.5",
     "@types/sha1": "1.1.2",
     "@types/webpack-env": "1.14.1",
-    "@typescript-eslint/eslint-plugin": "2.5.0",
+    "@typescript-eslint/eslint-plugin": "2.6.0",
     "@typescript-eslint/parser": "2.5.0",
     "airtable": "0.7.1",
     "algoliasearch": "3.34.0",
