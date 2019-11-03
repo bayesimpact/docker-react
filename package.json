@@ -10,7 +10,7 @@
     "@hot-loader/react-dom": "16.10.2",
     "@mysticatea/eslint-plugin": "12.0.0",
     "@types/lodash": "4.14.144",
-    "@types/node": "12.12.3",
+    "@types/node": "12.12.5",
     "@types/radium": "0.24.2",
     "@types/react-facebook-login": "4.1.0",
     "@types/react-loadable": "5.5.2",
