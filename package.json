@@ -12,7 +12,7 @@
     "@types/algoliasearch": "3.34.5",
     "@types/amplitude-js": "4.4.4",
     "@types/chai": "4.2.4",
-    "@types/lodash": "4.14.144",
+    "@types/lodash": "4.14.145",
     "@types/mocha": "5.2.7",
     "@types/node": "12.12.5",
     "@types/prop-types": "15.7.3",
