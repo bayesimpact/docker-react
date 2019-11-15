@@ -108,3 +108,15 @@ update_list=($update_list)
 for (( i=0; i<${#update_list[@]} ; i+=2 )) ; do
     update_dependency "${update_list[$i]}" "${update_list[$i+1]}"
 done
+
+# Update other bot branches (that are not in the outdated list anymore) and delete them if they
+# have been integrated.
+git checkout -q master &> /dev/null
+for branch in $(git branch -r | grep "$REMOTE_REPO/$REMOTE_BRANCH_PREFIX-"); do
+    git reset --hard "$branch"
+    git rebase "$REMOTE_REPO/master"
+    if [ "$(git rev-parse HEAD)" == "$(git rev-parse "$REMOTE_REPO/master")" ]; then
+        git push -d ${branch/\// }
+    fi
+done
+git reset --hard "$REMOTE_REPO/master"
