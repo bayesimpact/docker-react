@@ -15,7 +15,7 @@
     "@types/chai": "4.2.5",
     "@types/lodash": "4.14.149",
     "@types/mocha": "5.2.7",
-    "@types/node": "12.12.9",
+    "@types/node": "12.12.11",
     "@types/prop-types": "15.7.3",
     "@types/radium": "0.24.2",
     "@types/react-facebook-login": "4.1.0",
