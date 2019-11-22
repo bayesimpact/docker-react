@@ -39,7 +39,7 @@
     "babel-loader": "8.0.6",
     "browser-metrics": "0.1.4",
     "chai": "4.2.0",
-    "connected-react-router": "6.5.2",
+    "connected-react-router": "6.6.0",
     "copyfiles": "2.1.1",
     "css-loader": "3.2.0",
     "detect-browser": "4.8.0",
