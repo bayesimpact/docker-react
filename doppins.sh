@@ -35,7 +35,7 @@ function make_package_commit_message() {
     local name=$1
     local version=$2
     echo "[AutoUpdate] Update dependency $name to version $version."
-    local repo=$(npm show $name repository.url | grep -oP $GITHUB_URL_REGEX)
+    local repo=$(npm show $name repository.url | ggrep -oP $GITHUB_URL_REGEX)
     if [ -n "$repo" ]; then
         changelog="https://$repo/tree/master/CHANGELOG.md"
         if curl --fail -sIo /dev/null $changelog; then
@@ -112,7 +112,7 @@ done
 # Update other bot branches (that are not in the outdated list anymore) and delete them if they
 # have been integrated.
 git checkout -q master &> /dev/null
-for branch in $(git branch -r | grep "$REMOTE_REPO/$REMOTE_BRANCH_PREFIX-"); do
+for branch in $(git branch -r | ggrep "$REMOTE_REPO/$REMOTE_BRANCH_PREFIX-"); do
     git reset --hard "$branch"
     git rebase "$REMOTE_REPO/master"
     if [ "$(git rev-parse HEAD)" == "$(git rev-parse "$REMOTE_REPO/master")" ]; then
