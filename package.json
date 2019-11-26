@@ -5,7 +5,7 @@
     "@babel/plugin-proposal-optional-chaining": "7.6.0",
     "@babel/plugin-syntax-dynamic-import": "7.7.4",
     "@babel/polyfill": "7.7.0",
-    "@babel/preset-env": "7.7.1",
+    "@babel/preset-env": "7.7.4",
     "@babel/preset-react": "7.7.0",
     "@babel/preset-typescript": "7.7.2",
     "@hot-loader/react-dom": "16.11.0",
