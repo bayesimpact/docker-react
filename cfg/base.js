@@ -19,7 +19,7 @@ module.exports = {
     port: port,
     publicPath: '/',
   },
-  entry: ['./src/entry'],
+  entry: ['whatwg-fetch', './src/entry'],
   module: {
     rules: [
       {
@@ -84,7 +84,7 @@ module.exports = {
   plugins: [
     // fetch polyfill
     new webpack.ProvidePlugin({
-      'fetch': 'imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch',
+      fetch: 'exports-loader?self.fetch!whatwg-fetch/dist/fetch.umd',
     }),
   ],
   resolve: {
