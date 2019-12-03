@@ -1,5 +1,6 @@
 var path = require('path')
 var srcPath = path.join(__dirname, '/../src/')
+var baseConfig = require('./base')
 
 module.exports = {
   devtool: 'eval',
@@ -13,22 +14,23 @@ module.exports = {
       },
       {
         include: [
-          path.join(__dirname, '/../src'),
-          path.join(__dirname, '/../test'),
+          path.join(__dirname, '../src'),
+          path.join(__dirname, '../test'),
         ],
-        test: /\.(js|jsx)$/,
-        use: 'babel-loader',
+        test: /\.[jt]sx?$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            plugins: [
+              '@babel/plugin-syntax-dynamic-import',
+              ['@babel/plugin-proposal-class-properties', {loose: false}],
+              ['@babel/plugin-proposal-optional-chaining', {loose: false}],
+            ],
+            presets: [['@babel/env', {modules: false}], '@babel/react', '@babel/typescript'],
+          },
+        },
       },
     ],
   },
-  resolve: {
-    alias: {
-      components: srcPath + 'components/',
-      config: srcPath + 'config/' + process.env.REACT_WEBPACK_ENV,
-      images: srcPath + 'images/',
-      store: srcPath + 'store/',
-      styles: srcPath + 'styles/',
-    },
-    extensions: ['.js', '.jsx', '_pb.js'],
-  },
+  resolve: baseConfig.resolve,
 }

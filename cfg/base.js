@@ -23,12 +23,6 @@ module.exports = {
   module: {
     rules: [
       {
-        enforce: 'pre',
-        include: path.join(__dirname, 'src'),
-        test: /\.(js|jsx)$/,
-        use: 'eslint-loader',
-      },
-      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
@@ -101,6 +95,6 @@ module.exports = {
       store: srcPath + '/store/',
       styles: srcPath + '/styles/',
     },
-    extensions: ['.js', '.jsx', '_pb.js'],
+    extensions: ['.js', '.jsx', '_pb.js', '.ts', '.tsx', '_pb.d.ts'],
   },
 }

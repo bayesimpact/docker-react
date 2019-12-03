@@ -53,8 +53,15 @@ config.module.rules.push({
   include: [
     path.join(__dirname, '/../src'),
   ],
-  test: /\.(js|jsx)$/,
+  test: /\.[jt]sx?$/,
   use: 'babel-loader',
+  options: {
+    plugins: [
+      ['@babel/plugin-proposal-class-properties', {loose: false}],
+      ['@babel/plugin-proposal-optional-chaining', {loose: false}],
+    ],
+    presets: [['@babel/env', {modules: false}], '@babel/react', '@babel/typescript'],
+  }
 })
 
 module.exports = config
