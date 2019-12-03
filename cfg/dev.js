@@ -44,7 +44,7 @@ config.module.rules.push({
   include: [
     path.join(__dirname, '/../src'),
   ],
-  test: /\.(js|jsx)$/,
+  test: /\.[jt]sx?$/,
   use: {
     loader: 'babel-loader',
     options: {
@@ -52,8 +52,9 @@ config.module.rules.push({
         'react-hot-loader/babel',
         '@babel/plugin-syntax-dynamic-import',
         ['@babel/plugin-proposal-class-properties', {loose: false}],
+        ['@babel/plugin-proposal-optional-chaining', {loose: false}],
       ],
-      presets: [['@babel/env', {modules: false}], '@babel/react'],
+      presets: [['@babel/env', {modules: false}], '@babel/react', '@babel/typescript'],
     },
   },
 })
