@@ -96,7 +96,7 @@
     "mdi-react": "6.5.0",
     "minimist": "1.2.0",
     "mocha": "7.0.0",
-    "mocha-junit-reporter": "1.23.1",
+    "mocha-junit-reporter": "1.23.3",
     "moment": "2.24.0",
     "nginx-conf": "1.5.0",
     "normalize.css": "8.0.1",
