@@ -43,7 +43,7 @@
     "autocomplete.js": "0.37.0",
     "babel-eslint": "10.0.3",
     "babel-loader": "8.0.6",
-    "babel-plugin-i18next-extract": "0.5.0",
+    "babel-plugin-i18next-extract": "0.6.1",
     "browser-metrics": "0.1.4",
     "chai": "4.2.0",
     "connected-react-router": "6.6.1",
