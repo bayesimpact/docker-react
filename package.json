@@ -41,7 +41,7 @@
     "airtable": "0.8.1",
     "algoliasearch": "3.35.1",
     "amplitude-js": "5.8.0",
-    "autocomplete.js": "0.37.0",
+    "autocomplete.js": "0.37.1",
     "babel-eslint": "10.0.3",
     "babel-loader": "8.0.6",
     "babel-plugin-i18next-extract": "0.6.1",
