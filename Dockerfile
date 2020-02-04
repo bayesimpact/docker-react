@@ -9,6 +9,9 @@ WORKDIR /usr/app
 ADD package.json /usr/app/
 RUN yarn install
 
+# TODO(pascal): Understand why the package sometimes install its own version of @sentry/browser.
+RUn rm -rf node_modules/\@types/redux-sentry-middleware/node_modules
+
 # Add default setup files.
 ADD .babelrc server.js webpack.config.js /usr/app/
 ADD cfg /usr/app/cfg
