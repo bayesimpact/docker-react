@@ -40,7 +40,7 @@
     "@typescript-eslint/eslint-plugin": "2.18.0",
     "@typescript-eslint/parser": "2.19.0",
     "airtable": "0.8.1",
-    "algoliasearch": "3.35.1",
+    "algoliasearch": "4.0.2",
     "amplitude-js": "5.9.0",
     "autocomplete.js": "0.37.1",
     "babel-eslint": "10.0.3",
