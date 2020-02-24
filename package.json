@@ -79,7 +79,7 @@
     "imagemin": "7.0.1",
     "imagemin-mozjpeg": "8.0.0",
     "imagemin-optipng": "7.1.0",
-    "imagemin-svgo": "7.0.0",
+    "imagemin-svgo": "7.1.0",
     "img-loader": "3.0.1",
     "imports-loader": "0.8.0",
     "isparta-loader": "2.0.0",
