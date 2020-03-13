@@ -41,7 +41,7 @@
     "@typescript-eslint/parser": "2.23.0",
     "airtable": "0.8.1",
     "algoliasearch": "3.35.1",
-    "amplitude-js": "5.9.0",
+    "amplitude-js": "5.10.0",
     "autocomplete.js": "0.37.1",
     "babel-eslint": "10.1.0",
     "babel-loader": "8.0.6",
