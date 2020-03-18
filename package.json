@@ -48,7 +48,7 @@
     "babel-plugin-i18next-extract": "0.6.1",
     "browser-metrics": "0.1.4",
     "chai": "4.2.0",
-    "connected-react-router": "6.6.1",
+    "connected-react-router": "6.8.0",
     "copyfiles": "2.2.0",
     "css-loader": "3.4.2",
     "detect-browser": "5.0.0",
