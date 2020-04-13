@@ -50,7 +50,7 @@
     "chai": "4.2.0",
     "connected-react-router": "6.8.0",
     "copyfiles": "2.2.0",
-    "css-loader": "3.5.1",
+    "css-loader": "3.5.2",
     "detect-browser": "5.0.0",
     "emoji-regex": "8.0.0",
     "es6-promise": "4.2.8",
