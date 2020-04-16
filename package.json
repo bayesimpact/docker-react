@@ -115,7 +115,7 @@
     "query-string": "6.12.1",
     "radium": "0.26.0",
     "randexp": "0.5.3",
-    "raw-loader": "4.0.0",
+    "raw-loader": "4.0.1",
     "react": "16.13.1",
     "react-addons-test-utils": "15.6.2",
     "react-custom-scrollbars": "4.2.1",
