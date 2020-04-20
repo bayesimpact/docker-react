@@ -100,7 +100,7 @@
     "karma-webpack": "4.0.2",
     "local-storage-fallback": "4.1.1",
     "lodash": "4.17.15",
-    "mdi-react": "7.0.0",
+    "mdi-react": "7.1.0",
     "mocha": "7.1.1",
     "mocha-junit-reporter": "1.23.3",
     "moment": "2.24.0",
