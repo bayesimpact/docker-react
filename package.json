@@ -152,7 +152,7 @@
     "smoothscroll-polyfill": "0.4.4",
     "style-loader": "1.1.4",
     "svg-transform-loader": "2.0.12",
-    "ts-node": "8.8.2",
+    "ts-node": "8.9.0",
     "typescript": "3.8.3",
     "unused-files-webpack-plugin": "3.4.0",
     "url-loader": "4.1.0",
