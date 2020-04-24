@@ -35,7 +35,7 @@
     "@types/redux-sentry-middleware": "0.1.1",
     "@types/sha1": "1.1.2",
     "@types/smoothscroll-polyfill": "0.3.1",
-    "@types/webpack-env": "1.15.1",
+    "@types/webpack-env": "1.15.2",
     "@types/zepto": "1.0.30",
     "@typescript-eslint/eslint-plugin": "2.29.0",
     "@typescript-eslint/parser": "2.29.0",
