@@ -161,7 +161,7 @@
     "webpack-dev-server": "3.10.3",
     "webpack-pwa-manifest": "4.2.0",
     "whatwg-fetch": "3.0.0",
-    "yarn-lazy-lock": "0.1.2"
+    "yarn-lazy-lock": "0.1.3"
   },
   "name": "bayesimpact-react",
   "scripts": {
