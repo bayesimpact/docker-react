@@ -75,7 +75,7 @@
     "google-protobuf": "3.12.0",
     "html-webpack-plugin": "4.3.0",
     "i18next": "19.4.4",
-    "i18next-browser-languagedetector": "4.1.1",
+    "i18next-browser-languagedetector": "4.2.0",
     "imagemin": "7.0.1",
     "imagemin-mozjpeg": "8.0.0",
     "imagemin-optipng": "7.1.0",
