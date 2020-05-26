@@ -74,7 +74,7 @@
     "glob": "7.1.6",
     "google-protobuf": "3.12.1",
     "html-webpack-plugin": "4.3.0",
-    "i18next": "19.4.4",
+    "i18next": "19.4.5",
     "i18next-browser-languagedetector": "4.2.0",
     "imagemin": "7.0.1",
     "imagemin-mozjpeg": "8.0.0",
