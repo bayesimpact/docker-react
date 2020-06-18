@@ -70,7 +70,7 @@
     "exports-loader": "0.7.0",
     "file-loader": "6.0.0",
     "firebase": "7.15.1",
-    "firebase-tools": "8.4.2",
+    "firebase-tools": "8.4.3",
     "glob": "7.1.6",
     "google-protobuf": "3.12.2",
     "html-webpack-plugin": "4.3.0",
