@@ -6,8 +6,8 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker:
-          reusable: true
-
+          # Allows to use previous cached version of the built Docker services.
+          docker_layer_caching: true
       - run:
           name: Check that package.json is sorted.
           command: jq . package.json -S | diff - package.json
@@ -16,16 +16,33 @@ jobs:
           name: Check that the Dockerfile builds properly.
           command: docker build -t bayesimpact/react-base:latest .
 
+  push-and-check-dependant-repos:
+      - checkout
+      - setup_remote_docker:
+          # Allows to use previous cached version of the built Docker services.
+          docker_layer_caching: true
       - run:
           name: Push to Docker Hub
           command: |
-            if [[ "$CIRCLE_BRANCH" == "master" ]] || [[ "$CIRCLE_BRANCH" == *-test-push ]]; then
-              docker build -t "bayesimpact/react-base:$CIRCLE_BRANCH" .
-              docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
-              docker push "bayesimpact/react-base:$CIRCLE_BRANCH"
-            fi
+            docker build -t "bayesimpact/react-base:$CIRCLE_BRANCH" .
+            docker build -t "bayesimpact/react-base:latest" .
+            docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
+            docker push "bayesimpact/react-base:$CIRCLE_BRANCH"
+            docker push "bayesimpact/react-base:latest"
+      - run:
+          name: Run tests on Bob
+          command: |
+            for project in $PROJECTS_TO_CHECK; do
+              curl -u ${CIRCLE_API_KEY}: -d build_parameters[CIRCLE_JOB]=build-test-publish https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$project/tree/master"
+            done
 workflows:
   version: 2
   commit:
     jobs:
       - build
+      - push-and-check-dependant-repos:
+        filters:
+          branches:
+            only:
+              - master
+              - /.*-test-push/
