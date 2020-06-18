@@ -6,8 +6,8 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker:
-          reusable: true
-
+          # Allows to use previous cached version of the built Docker services.
+          docker_layer_caching: true
       - run:
           name: Check that package.json is sorted.
           command: jq . package.json -S | diff - package.json
@@ -16,6 +16,12 @@ jobs:
           name: Check that the Dockerfile builds properly.
           command: docker build -t bayesimpact/react-base:latest .
 
+      - run:
+          name: Check that the new version doesn't break Bob.
+          command: |
+            docker build -t bayesimpact/react-base:latest .
+            git clone $BOB_REPOSITORY bob_emploi
+            docker-compose -f bob_emploi/docker-compose.yml build frontend-dev
       - run:
           name: Push to Docker Hub
           command: |
