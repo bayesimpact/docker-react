@@ -67,7 +67,7 @@
     "eslint-plugin-react-perf": "3.2.3",
     "eslint-plugin-unicorn": "20.1.0",
     "eslint-plugin-you-dont-need-lodash-underscore": "6.10.0",
-    "exports-loader": "1.0.1",
+    "exports-loader": "1.1.0",
     "file-loader": "6.0.0",
     "firebase": "7.15.4",
     "firebase-tools": "8.4.3",
