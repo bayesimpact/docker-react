@@ -1,5 +1,19 @@
-version: 2
+version: 2.1
 jobs:
+  check-dependant-repo: # defines a parameterized job
+    description: A job that checks that updated libs don't break the builds based on this image.
+    parameters:
+      owner:
+        description: "Github owner of the target repo"
+        default: "bayesimpact"
+        type: string
+      repo:
+        description: "Github name of the target repo"
+        type: string
+    machine: true
+    steps:
+      - checkout
+      - run: .circleci/test_other_repo.sh "<< parameters.owner >>/<< parameters.repo >>"
   build:
     docker:
       - image: bayesimpact/circleci
@@ -16,15 +30,22 @@ jobs:
           name: Check that the Dockerfile builds properly.
           command: docker build -t bayesimpact/react-base:$CIRCLE_BRANCH .
       - run:
-          name: Run tests on Bob
+          name: Publish docker image.
           command: |
             docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
             docker push "bayesimpact/react-base:$CIRCLE_BRANCH"
-            .circleci/test_other_repo.sh bayesimpact/bob-emploi-internal
-            .circleci/test_other_repo.sh bayesimpact/cas-contact-internal
 
 workflows:
-  version: 2
+  version: 2.1
   commit:
     jobs:
       - build
+      - check-dependant-repo:
+          requires:
+            - build
+          repo: bob-emploi-internal
+      - check-dependant-repo:
+          requires:
+            - build
+          repo: cas-contact-internal
+
