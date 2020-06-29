@@ -6,26 +6,44 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker:
-          reusable: true
-
+          # Allows to use previous cached version of the built Docker services.
+          docker_layer_caching: true
       - run:
           name: Check that package.json is sorted.
           command: jq . package.json -S | diff - package.json
 
       - run:
           name: Check that the Dockerfile builds properly.
-          command: docker build -t bayesimpact/react-base:latest .
+          command: docker build -t bayesimpact/react-base:$CIRCLE_BRANCH .
+      - run:
+          name: Run tests on Bob
+          command: |
+            docker push "bayesimpact/react-base:$CIRCLE_BRANCH"
+            ./test_other_repo.sh bayesimpact/bob-emploi-internal
 
+  push:
+    docker:
+      - image: bayesimpact/circleci
+    steps:
+      - checkout
+      - setup_remote_docker:
+          # Allows to use previous cached version of the built Docker services.
+          docker_layer_caching: true
       - run:
           name: Push to Docker Hub
           command: |
-            if [[ "$CIRCLE_BRANCH" == "master" ]] || [[ "$CIRCLE_BRANCH" == *-test-push ]]; then
-              docker build -t "bayesimpact/react-base:$CIRCLE_BRANCH" .
-              docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
-              docker push "bayesimpact/react-base:$CIRCLE_BRANCH"
-            fi
+            docker build -t bayesimpact/react-base .
+            docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
 workflows:
   version: 2
   commit:
     jobs:
       - build
+      - push:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
+                - /.*-test-push/
