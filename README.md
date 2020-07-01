@@ -96,6 +96,17 @@ service_name:
 ```
 And then run `docker-compose build service_name`
 
+#### Using OVERRIDDEN_PACKAGE (optional)
+
+Before running `yarn` or `npm` on your `package.json`, run the following command:
+```bash
+test -z $OVERRIDDEN_PACKAGE ||
+  sed -i "/$(echo $OVERRIDDEN_PACKAGE | cut -f1-3 \
+    -d\")/s/.*/$OVERRIDDEN_PACKAGE/" package.json
+```
+
+This will update `package.json` by replacing the package version with the one from the PR currently tested.
+
 
 ## Publishing the image
 
