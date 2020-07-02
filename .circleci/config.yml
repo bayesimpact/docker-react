@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  check-dependant-repo: # defines a parameterized job
+  check-dependant-repo:  # defines a parameterized job
     description: A job that checks that updated libs don't break the builds based on this image.
     parameters:
       owner:
@@ -25,15 +25,14 @@ jobs:
       - run:
           name: Check that package.json is sorted.
           command: jq . package.json -S | diff - package.json
-
       - run:
           name: Check that the Dockerfile builds properly.
-          command: docker build -t bayesimpact/react-base:$CIRCLE_BRANCH .
+          command: docker build -t bayesimpact/react-base:$(.circleci/tag.sh) .
       - run:
           name: Publish docker image.
           command: |
             docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
-            docker push "bayesimpact/react-base:$CIRCLE_BRANCH"
+            docker push "bayesimpact/react-base:$(.circleci/tag.sh)"
 
 workflows:
   version: 2.1
@@ -48,4 +47,3 @@ workflows:
           requires:
             - build
           repo: cas-contact-internal
-

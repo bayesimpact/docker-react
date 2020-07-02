@@ -1,5 +1,10 @@
+#!/bin/bash
+# TODO(cyrille): Add doc.
+set -e
+
 readonly project=$1
-readonly TAG=$CIRCLE_BRANCH
+readonly CIRCLE_FOLDER="$(dirname ${BASH_SOURCE[0]})"
+readonly TAG="$(bash $CIRCLE_FOLDER/tag.sh)"
 # TODO(cyrille): Use a workflow build once they allow adding build parameters.
 readonly BUILD_NUM=$(curl -s -u $CIRCLE_API_KEY: \
   -d "build_parameters[REACT_BASE_TAG]=$TAG&build_parameters[CIRCLE_JOB]=test-for-base-change" \
