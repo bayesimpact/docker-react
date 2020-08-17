@@ -99,7 +99,7 @@
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "4.0.2",
     "local-storage-fallback": "4.1.1",
-    "lodash": "4.17.19",
+    "lodash": "4.17.20",
     "mdi-react": "7.3.0",
     "mocha": "8.1.1",
     "mocha-junit-reporter": "2.0.0",
