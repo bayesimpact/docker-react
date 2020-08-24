@@ -11,7 +11,7 @@
     "@babel/preset-typescript": "7.10.4",
     "@hot-loader/react-dom": "16.13.0",
     "@mysticatea/eslint-plugin": "13.0.0",
-    "@sentry/browser": "5.21.3",
+    "@sentry/browser": "5.21.4",
     "@types/algoliasearch": "3.34.10",
     "@types/amplitude-js": "5.11.0",
     "@types/chai": "4.2.12",
