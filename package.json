@@ -51,7 +51,7 @@
     "connected-react-router": "6.8.0",
     "copy-to-clipboard": "3.3.1",
     "copyfiles": "2.3.0",
-    "css-loader": "4.2.1",
+    "css-loader": "4.2.2",
     "detect-browser": "5.1.1",
     "es6-promise": "4.2.8",
     "es6-set-proptypes": "1.0.0",
