@@ -101,7 +101,7 @@
     "local-storage-fallback": "4.1.1",
     "lodash": "4.17.20",
     "mdi-react": "7.3.0",
-    "mocha": "8.1.1",
+    "mocha": "8.1.2",
     "mocha-junit-reporter": "2.0.0",
     "moment": "2.27.0",
     "nginx-conf": "1.5.0",
