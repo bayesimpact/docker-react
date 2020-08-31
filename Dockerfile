@@ -6,7 +6,7 @@ CMD ["npm", "start"]
 WORKDIR /usr/app
 
 # TODO(cyrille): Drop this once https://github.com/puppeteer/puppeteer/issues/5835 is resolved.
-RUN yarn add puppeteer@5.2.1 --exact
+RUN npm install puppeteer@5.2.1 && rm package-lock.json
 # Install a bunch of node modules that are commonly used.
 ADD package.json /usr/app/
 RUN yarn install
