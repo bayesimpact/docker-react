@@ -10,10 +10,14 @@ jobs:
       repo:
         description: "Github name of the target repo"
         type: string
+      job-name:
+        description: "The name of the CircleCI job to run"
+        default: "test-for-base-change"
+        type: string
     machine: true
     steps:
       - checkout
-      - run: .circleci/test_other_repo.sh "<< parameters.owner >>/<< parameters.repo >>"
+      - run: .circleci/test_other_repo.sh "<< parameters.owner >>/<< parameters.repo >>" "<< parameters.job-name >>"
   build:
     docker:
       - image: bayesimpact/circleci
