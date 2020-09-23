@@ -50,8 +50,4 @@ workflows:
       - check-dependant-repo:
           requires:
             - build
-          repo: cas-contact-internal
-      - check-dependant-repo:
-          requires:
-            - build
           repo: ma-voie-internal
