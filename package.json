@@ -58,7 +58,7 @@
     "es6-set-proptypes": "1.0.0",
     "eslint": "7.10.0",
     "eslint-import-resolver-typescript": "2.3.0",
-    "eslint-import-resolver-webpack": "0.12.2",
+    "eslint-import-resolver-webpack": "0.13.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-json5": "0.1.1",
