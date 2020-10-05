@@ -62,7 +62,11 @@ config.module.rules.push({
         ['@babel/plugin-proposal-class-properties', {loose: false}],
         ['@babel/plugin-proposal-optional-chaining', {loose: false}],
       ],
-      presets: [['@babel/env', {modules: false}], '@babel/react', '@babel/typescript'],
+      presets: [
+        ['@babel/env', {corejs: 3, modules: false, useBuiltIns: 'usage'}],
+        '@babel/react',
+        '@babel/typescript',
+      ],
     },
   },
 })
