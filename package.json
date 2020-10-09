@@ -54,7 +54,7 @@
     "core-js": "3.6.5",
     "css-loader": "4.3.0",
     "date-fns": "2.16.1",
-    "detect-browser": "5.1.1",
+    "detect-browser": "5.2.0",
     "es6-promise": "4.2.8",
     "es6-set-proptypes": "1.0.0",
     "eslint": "7.10.0",
