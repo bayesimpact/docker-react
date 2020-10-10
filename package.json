@@ -109,7 +109,7 @@
     "normalize.css": "8.0.1",
     "npm": "6.14.8",
     "npm-run-all": "4.1.5",
-    "null-loader": "4.0.0",
+    "null-loader": "4.0.1",
     "package-json-validator": "0.6.3",
     "prop-types": "15.7.2",
     "puppeteer": "5.3.1",
