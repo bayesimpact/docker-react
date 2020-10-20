@@ -44,10 +44,17 @@ workflows:
     jobs:
       - build
       - check-dependant-repo:
+          # TODO(cyrille): Find a way to be able to trigger those manually.
+          filters:
+            branches:
+              only: master
           requires:
             - build
           repo: bob-emploi-internal
       - check-dependant-repo:
+          filters:
+            branches:
+              only: master
           requires:
             - build
           repo: ma-voie-internal

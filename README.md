@@ -54,7 +54,7 @@ Then simply rebuild your images that are based on `react-base`.
 
 ## Continuous integration
 
-When running the CI on a branch, CircleCI builds the docker image, and if it succeds, runs a job in the dependant repos. To add a new repo, do the following:
+When running the CI on a branch, CircleCI builds the docker image. On the master branch, it will also run a job in each dependant repos. To add a new repo, do the following:
 
 ### Configure your repo's build
 
@@ -83,6 +83,19 @@ service_name:
         - REACT_BASE_TAG
 ```
 And then run `docker-compose build service_name`
+
+#### Using Github Status (optional)
+
+To tell docker-react that the build succeeded on the dependant repo, you must update a [Github status check](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-status-checks) on docker-react. This is completely optional (the corresponding check will remain "pending" if you don't do it, but it's not blocking anything).
+
+Once the dependant repo considers the build successful, it should call the status check API with the following HTTPS request:
+
+```bash
+curl -u "$GITHUB_STATUS_TOKEN" "$STATUS_UPDATE_URL" \
+  -XPOST --data '{"status": "success", "context": "'$STATUS_CONTEXT'"}'
+```
+
+`GITHUB_STATUS_TOKEN` should be given as basic authentication with a [Github access token](https://github.com/settings/tokens), with `repo:status` access on `bayesimpact/docker-react`. The other environment variables (`STATUS_UPDATE_URL` and `STATUS_CONTEXT`) are directly given to the dependent repo CircleCI build.
 
 ### Configuring docker-react build
 
