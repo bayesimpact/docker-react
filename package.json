@@ -123,7 +123,7 @@
     "react": "16.14.0",
     "react-addons-test-utils": "15.6.2",
     "react-custom-scrollbars": "4.2.1",
-    "react-dom": "16.14.0",
+    "react-dom": "17.0.1",
     "react-drag-list": "1.1.0",
     "react-facebook-login": "4.1.1",
     "react-google-login": "5.1.22",
