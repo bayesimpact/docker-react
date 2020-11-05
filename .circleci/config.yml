@@ -26,6 +26,8 @@ jobs:
       - setup_remote_docker:
           # Allows to use previous cached version of the built Docker services.
           docker_layer_caching: true
+          # Allows to use Node 14+ docker image.
+          version: 19.03.13
       - run:
           name: Check that package.json is sorted.
           command: jq . package.json -S | diff - package.json
