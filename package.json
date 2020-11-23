@@ -31,7 +31,7 @@
     "@types/react-router": "5.1.8",
     "@types/react-router-dom": "5.1.6",
     "@types/react-select": "3.0.26",
-    "@types/react-test-renderer": "16.9.3",
+    "@types/react-test-renderer": "17.0.0",
     "@types/redux-mock-store": "1.0.2",
     "@types/redux-sentry-middleware": "0.1.2",
     "@types/sha1": "1.1.2",
