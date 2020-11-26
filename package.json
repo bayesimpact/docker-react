@@ -137,7 +137,7 @@
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "react-router-prop-types": "1.0.5",
-    "react-select": "3.1.0",
+    "react-select": "3.1.1",
     "react-share": "4.3.1",
     "react-swipeable": "6.0.0",
     "react-test-renderer": "17.0.1",
