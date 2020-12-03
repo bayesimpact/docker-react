@@ -13,8 +13,7 @@ RUN apt-get update && apt-get install -qqy --no-install-recommends gconf-service
     libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation \
     libappindicator1 libnss3 lsb-release xdg-utils wget
 
-# TODO(cyrille): Drop this once https://github.com/puppeteer/puppeteer/issues/5835 is resolved.
-RUN npm install puppeteer@5.3.0 && rm package-lock.json
+# TODO(cyrille): If an ECONRESET error occurs sporadically, get back lines from 6d51ab3.
 # Install a bunch of node modules that are commonly used.
 ADD package.json /usr/app/
 RUN yarn install
