@@ -78,7 +78,7 @@
     "firebase-tools": "8.19.0",
     "glob": "7.1.6",
     "google-protobuf": "3.14.0",
-    "html-webpack-plugin": "4.5.0",
+    "html-webpack-plugin": "4.5.1",
     "i18next": "19.8.4",
     "i18next-browser-languagedetector": "6.0.1",
     "imagemin": "7.0.1",
