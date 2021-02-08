@@ -54,7 +54,7 @@ Then simply rebuild your images that are based on `react-base`.
 
 ## Continuous integration
 
-When running the CI on a branch, CircleCI builds the docker image. On the master branch, it will also run a job in each dependant repos. To add a new repo, do the following:
+When running the CI on a branch, CircleCI builds the docker image. On the main branch, it will also run a job in each dependant repos. To add a new repo, do the following:
 
 ### Configure your repo's build
 
@@ -110,4 +110,4 @@ Add a job in the `commit` workflow
 
 ## Publishing the image
 
-The public image on https://hub.docker.com/r/bayesimpact/react-base/ gets updated automatically. You just have to edit the `Dockerfile` and push to github. Always have someone review your code before you push to master.
+The public image on https://hub.docker.com/r/bayesimpact/react-base/ gets updated automatically. You just have to edit the `Dockerfile` and push to github. Always have someone review your code before you push to main.

@@ -37,7 +37,7 @@ function make_package_commit_message() {
     echo "[AutoUpdate] Update dependency $name to version $version."
     local repo=$(npm show $name repository.url | ggrep -oP $GITHUB_URL_REGEX)
     if [ -n "$repo" ]; then
-        changelog="https://$repo/tree/master/CHANGELOG.md"
+        changelog="https://$repo/tree/main/CHANGELOG.md"
         if curl --fail -sIo /dev/null $changelog; then
             echo -e "\nChangelog available at $changelog"
         fi
@@ -70,10 +70,10 @@ function update_dependency() {
         git branch $branch_name $branch_opts
     fi
     git checkout -q $branch_name &> /dev/null
-    if ! git rebase master &> /dev/null; then
-        # There are conflicts while rebasing, let's drop the branch and recreate it from master.
+    if ! git rebase main &> /dev/null; then
+        # There are conflicts while rebasing, let's drop the branch and recreate it from main.
         git rebase --abort
-        git reset --hard master
+        git reset --hard main
     fi
     current_version=$(package_version $name)
     if [[ $current_version == $last_version ]]; then
@@ -81,7 +81,7 @@ function update_dependency() {
         if [ -n "$has_remote" ] && [ "$(git rev-parse --verify HEAD)" != "$has_remote" ]; then
             git review -f
         fi
-        git checkout -q master &> /dev/null
+        git checkout -q main &> /dev/null
         return
     fi
     package_version $name $last_version
@@ -89,14 +89,14 @@ function update_dependency() {
     git commit -qam "$message"
     git push -uf $REMOTE_REPO $branch_name:$remote_branch_name
     hub pull-request -m "$message" -h "${remote_branch_name}" | echo
-    git checkout -q master &> /dev/null
+    git checkout -q main &> /dev/null
 }
 
 if [ -n "$(git diff HEAD --shortstat 2> /dev/null | tail -n1)" ]; then
   echo "Current git status is dirty. Commit, stash or revert your changes before submitting." 1>&2
   exit 1
 fi
-git checkout -q master &> /dev/null
+git checkout -q main &> /dev/null
 git pull -q &> /dev/null
 if [ -n "$1" ]; then
     update_dependency $1
@@ -111,12 +111,12 @@ done
 
 # Update other bot branches (that are not in the outdated list anymore) and delete them if they
 # have been integrated.
-git checkout -q master &> /dev/null
+git checkout -q main &> /dev/null
 for branch in $(git branch -r | ggrep "$REMOTE_REPO/$REMOTE_BRANCH_PREFIX-"); do
     git reset --hard "$branch"
-    git rebase "$REMOTE_REPO/master"
-    if [ "$(git rev-parse HEAD)" == "$(git rev-parse "$REMOTE_REPO/master")" ]; then
+    git rebase "$REMOTE_REPO/main"
+    if [ "$(git rev-parse HEAD)" == "$(git rev-parse "$REMOTE_REPO/main")" ]; then
         git push -d ${branch/\// }
     fi
 done
-git reset --hard "$REMOTE_REPO/master"
+git reset --hard "$REMOTE_REPO/main"
