@@ -14,7 +14,7 @@ readonly BUILD_NUM=$(curl -s -u $CIRCLE_API_KEY: \
   -d "build_parameters[CIRCLE_JOB]=$JOB_NAME" \
   -d "build_parameters[STATUS_CONTEXT]=$STATUS_CONTEXT" \
   -d "build_parameters[STATUS_UPDATE_URL]=$STATUS_UPDATE_URL" \
-  "https://circleci.com/api/v1.1/project/github/$PROJECT/tree/master" |
+  "https://circleci.com/api/v1.1/project/github/$PROJECT/tree/main" |
   jq -r '.build_num')
 readonly BUILD_URL="https://circleci.com/gh/$PROJECT/$BUILD_NUM"
 
