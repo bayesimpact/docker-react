@@ -8,7 +8,7 @@
     "@babel/polyfill": "7.12.1",
     "@babel/preset-env": "7.12.16",
     "@babel/preset-react": "7.12.13",
-    "@babel/preset-typescript": "7.12.16",
+    "@babel/preset-typescript": "7.12.17",
     "@hot-loader/react-dom": "17.0.1",
     "@mysticatea/eslint-plugin": "13.0.0",
     "@react-firebase/auth": "0.2.10",
