@@ -165,7 +165,7 @@
     "webpack-cli": "4.5.0",
     "webpack-dev-server": "3.11.2",
     "webpack-pwa-manifest": "4.3.0",
-    "whatwg-fetch": "3.5.0",
+    "whatwg-fetch": "3.6.1",
     "yarn-lazy-lock": "0.1.4"
   },
   "name": "bayesimpact-react",
