@@ -101,7 +101,7 @@
     "karma-mocha": "2.0.1",
     "karma-mocha-reporter": "2.2.5",
     "karma-sourcemap-loader": "0.3.8",
-    "karma-webpack": "4.0.2",
+    "karma-webpack": "5.0.0",
     "local-storage-fallback": "4.1.2",
     "lodash": "4.17.21",
     "mdi-react": "7.4.0",
