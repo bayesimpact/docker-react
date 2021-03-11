@@ -76,7 +76,7 @@
     "esm": "3.2.25",
     "exports-loader": "2.0.0",
     "file-loader": "6.2.0",
-    "firebase": "8.2.10",
+    "firebase": "8.3.0",
     "firebase-tools": "9.5.0",
     "glob": "7.1.6",
     "google-protobuf": "3.15.5",
