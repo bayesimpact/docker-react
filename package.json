@@ -97,7 +97,7 @@
     "json5-loader": "4.0.1",
     "jsonlint": "1.6.3",
     "jspdf": "2.3.1",
-    "karma": "6.2.0",
+    "karma": "6.3.1",
     "karma-chai": "0.1.0",
     "karma-chrome-launcher": "3.1.0",
     "karma-coverage": "2.0.3",
