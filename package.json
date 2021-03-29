@@ -60,7 +60,7 @@
     "date-fns": "2.19.0",
     "detect-browser": "5.2.0",
     "es6-set-proptypes": "1.0.0",
-    "eslint": "7.22.0",
+    "eslint": "7.23.0",
     "eslint-import-resolver-typescript": "2.4.0",
     "eslint-import-resolver-webpack": "0.13.0",
     "eslint-loader": "4.0.2",
