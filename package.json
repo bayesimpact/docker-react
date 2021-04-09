@@ -57,7 +57,7 @@
     "copyfiles": "2.4.1",
     "core-js": "3.10.1",
     "css-loader": "5.2.0",
-    "date-fns": "2.19.0",
+    "date-fns": "2.20.0",
     "detect-browser": "5.2.0",
     "es6-set-proptypes": "1.0.0",
     "eslint": "7.23.0",
