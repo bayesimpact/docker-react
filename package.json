@@ -15,7 +15,7 @@
     "@sentry/browser": "6.3.5",
     "@types/algoliasearch": "4.0.0",
     "@types/amplitude-js": "7.0.1",
-    "@types/chai": "4.2.17",
+    "@types/chai": "4.2.18",
     "@types/chai-almost": "1.0.1",
     "@types/imagemin-mozjpeg": "8.0.0",
     "@types/imagemin-optipng": "5.2.0",
