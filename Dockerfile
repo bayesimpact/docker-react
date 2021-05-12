@@ -19,11 +19,6 @@ RUN npm install puppeteer@5.3.0 && rm package-lock.json
 ADD package.json /usr/app/
 RUN yarn install
 
-# TODO(pascal): Drop those once https://github.com/yarnpkg/yarn/issues/6695 or
-# https://github.com/DefinitelyTyped/DefinitelyTyped/issues/20290 gets resolved.
-RUN rm -rf node_modules/\@types/redux-sentry-middleware/node_modules && sed '/"@sentry\/browser@\^5\.0\.0"/,/^\s*$/{d}' -i yarn.lock
-RUN rm -rf node_modules/\@types/terser-webpack-plugin/node_modules/webpack && sed '/webpack@\^5\.1\.0/,/^\s*$/{d}' -i yarn.lock
-
 # Add default setup files.
 ADD .babelrc server.js webpack.config.js /usr/app/
 ADD cfg /usr/app/cfg

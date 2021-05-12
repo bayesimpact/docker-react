@@ -180,6 +180,10 @@
     "yarn-lazy-lock": "0.1.4"
   },
   "name": "bayesimpact-react",
+  "resolutions": {
+    "@types/**/@sentry/browser": "6.3.5",
+    "@types/**/webpack": "5.36.2"
+  },
   "scripts": {
     "clean": "rimraf dist/*",
     "dist": "npm run clean && REACT_WEBPACK_ENV=dist webpack --bail",
