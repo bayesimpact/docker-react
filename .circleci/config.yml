@@ -33,7 +33,7 @@ jobs:
           command: jq . package.json -S | diff - package.json
       - run:
           name: Check that the Dockerfile builds properly.
-          command: docker build -t bayesimpact/react-base:$(.circleci/tag.sh) .
+          command: DOCKER_BUILDKIT=1 docker build -t bayesimpact/react-base:$(.circleci/tag.sh) .
       - run:
           name: Publish docker image.
           command: |
