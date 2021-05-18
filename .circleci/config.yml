@@ -32,6 +32,9 @@ jobs:
           name: Check that package.json is sorted.
           command: jq . package.json -S | diff - package.json
       - run:
+          name: Check that resolutions are synced with dependencies.
+          command: .circleci/test_resolutions.sh
+      - run:
           name: Check that the Dockerfile builds properly.
           command: DOCKER_BUILDKIT=1 docker build -t bayesimpact/react-base:$(.circleci/tag.sh) .
       - run:
