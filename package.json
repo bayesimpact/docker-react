@@ -82,7 +82,7 @@
     "eslint-plugin-unicorn": "29.0.0",
     "eslint-plugin-you-dont-need-lodash-underscore": "6.11.0",
     "esm": "3.2.25",
-    "exports-loader": "2.0.0",
+    "exports-loader": "3.0.0",
     "file-loader": "6.2.0",
     "firebase": "8.6.1",
     "firebase-tools": "9.11.0",
