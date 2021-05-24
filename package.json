@@ -96,7 +96,7 @@
     "imagemin-optipng": "8.0.0",
     "imagemin-svgo": "9.0.0",
     "img-loader": "4.0.0",
-    "imports-loader": "2.0.0",
+    "imports-loader": "3.0.0",
     "isparta-loader": "2.0.0",
     "js-cookie": "2.2.1",
     "json-loader": "0.5.7",
