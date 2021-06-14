@@ -86,7 +86,7 @@
     "firebase": "8.6.7",
     "firebase-tools": "9.12.1",
     "glob": "7.1.7",
-    "google-protobuf": "3.17.2",
+    "google-protobuf": "3.17.3",
     "html-webpack-plugin": "5.3.1",
     "i18next": "20.3.1",
     "i18next-browser-languagedetector": "6.1.1",
