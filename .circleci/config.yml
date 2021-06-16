@@ -52,20 +52,14 @@ workflows:
           # TODO(cyrille): Find a way to be able to trigger those manually.
           filters:
             branches:
-              only:
-                # TODO(émilie): Remove master when migration is over.
-                - main
-                - master
+              only: main
           requires:
             - build
           repo: bob-emploi-internal
       - check-dependant-repo:
           filters:
             branches:
-              only:
-                # TODO(émilie): Remove master when migration is over.
-                - main
-                - master
+              only: main
           requires:
             - build
           # TODO(émilie): correct for "ma-voie" repository.
