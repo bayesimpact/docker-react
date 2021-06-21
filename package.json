@@ -46,7 +46,7 @@
     "@types/webpack-dev-server": "3.11.4",
     "@types/webpack-env": "1.16.0",
     "@types/zepto": "1.0.31",
-    "@typescript-eslint/eslint-plugin": "4.26.1",
+    "@typescript-eslint/eslint-plugin": "4.27.0",
     "@typescript-eslint/parser": "4.27.0",
     "airtable": "0.11.1",
     "algoliasearch": "4.8.5",
