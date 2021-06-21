@@ -25,7 +25,7 @@
     "@types/lodash": "4.14.170",
     "@types/minimist": "1.2.1",
     "@types/mocha": "8.2.2",
-    "@types/node": "15.12.2",
+    "@types/node": "15.12.4",
     "@types/prop-types": "15.7.3",
     "@types/radium": "0.24.3",
     "@types/react": "17.0.11",
