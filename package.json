@@ -78,7 +78,7 @@
     "eslint-plugin-react": "7.24.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-react-perf": "3.3.0",
-    "eslint-plugin-unicorn": "33.0.1",
+    "eslint-plugin-unicorn": "34.0.0",
     "eslint-plugin-you-dont-need-lodash-underscore": "6.12.0",
     "esm": "3.2.25",
     "exports-loader": "3.0.0",
