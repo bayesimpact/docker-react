@@ -42,7 +42,7 @@
     "@types/sha1": "1.1.2",
     "@types/sinon": "10.0.2",
     "@types/smoothscroll-polyfill": "0.3.1",
-    "@types/terser-webpack-plugin": "5.0.3",
+    "@types/terser-webpack-plugin": "5.0.4",
     "@types/webpack-dev-server": "3.11.4",
     "@types/webpack-env": "1.16.0",
     "@types/zepto": "1.0.31",
