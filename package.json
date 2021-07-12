@@ -20,7 +20,7 @@
     "@types/imagemin-mozjpeg": "8.0.1",
     "@types/imagemin-optipng": "5.2.1",
     "@types/imagemin-svgo": "9.0.1",
-    "@types/json-stable-stringify": "1.0.32",
+    "@types/json-stable-stringify": "1.0.33",
     "@types/karma": "6.3.1",
     "@types/lodash": "4.14.171",
     "@types/minimist": "1.2.2",
