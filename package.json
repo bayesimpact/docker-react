@@ -26,7 +26,7 @@
     "@types/minimist": "1.2.1",
     "@types/mocha": "8.2.3",
     "@types/node": "16.3.1",
-    "@types/prop-types": "15.7.3",
+    "@types/prop-types": "15.7.4",
     "@types/radium": "0.24.4",
     "@types/react": "17.0.13",
     "@types/react-facebook-login": "4.1.3",
