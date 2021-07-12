@@ -17,7 +17,7 @@
     "@types/amplitude-js": "8.0.1",
     "@types/chai": "4.2.21",
     "@types/chai-almost": "1.0.1",
-    "@types/imagemin-mozjpeg": "8.0.0",
+    "@types/imagemin-mozjpeg": "8.0.1",
     "@types/imagemin-optipng": "5.2.1",
     "@types/imagemin-svgo": "9.0.0",
     "@types/json-stable-stringify": "1.0.32",
