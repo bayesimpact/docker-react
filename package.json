@@ -47,7 +47,7 @@
     "@types/webpack-env": "1.16.2",
     "@types/zepto": "1.0.32",
     "@typescript-eslint/eslint-plugin": "4.28.3",
-    "@typescript-eslint/parser": "4.28.2",
+    "@typescript-eslint/parser": "4.28.3",
     "airtable": "0.11.1",
     "algoliasearch": "4.8.5",
     "amplitude-js": "8.3.1",
