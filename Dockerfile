@@ -1,4 +1,4 @@
-FROM node:16.5.0
+FROM node:16.7.0
 
 EXPOSE 80
 ENV BIND_HOST=0.0.0.0
