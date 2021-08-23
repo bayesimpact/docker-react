@@ -28,7 +28,7 @@
     "@types/node": "16.4.3",
     "@types/prop-types": "15.7.4",
     "@types/radium": "0.24.4",
-    "@types/react": "17.0.16",
+    "@types/react": "17.0.19",
     "@types/react-facebook-login": "4.1.4",
     "@types/react-lazyload": "3.1.1",
     "@types/react-loadable": "5.5.6",
