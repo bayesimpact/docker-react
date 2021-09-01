@@ -43,7 +43,7 @@
     "@types/sinon": "10.0.2",
     "@types/smoothscroll-polyfill": "0.3.1",
     "@types/terser-webpack-plugin": "5.0.4",
-    "@types/webpack-dev-server": "3.11.5",
+    "@types/webpack-dev-server": "4.1.0",
     "@types/webpack-env": "1.16.2",
     "@types/zepto": "1.0.32",
     "@typescript-eslint/eslint-plugin": "4.30.0",
