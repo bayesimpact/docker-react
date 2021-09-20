@@ -61,7 +61,7 @@
     "connected-react-router": "6.9.1",
     "copy-to-clipboard": "3.3.1",
     "copyfiles": "2.4.1",
-    "core-js": "3.17.3",
+    "core-js": "3.18.0",
     "css-loader": "6.2.0",
     "date-fns": "2.23.0",
     "detect-browser": "5.2.0",
