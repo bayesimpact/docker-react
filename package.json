@@ -180,7 +180,7 @@
   },
   "name": "bayesimpact-react",
   "resolutions": {
-    "@types/**/@sentry/browser": "6.12.0",
+    "@types/**/@sentry/browser": "6.13.2",
     "@types/**/webpack": "5.52.1"
   },
   "scripts": {
