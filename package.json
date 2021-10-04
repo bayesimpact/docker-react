@@ -19,7 +19,7 @@
     "@types/chai-almost": "1.0.1",
     "@types/imagemin-mozjpeg": "8.0.1",
     "@types/imagemin-optipng": "5.2.1",
-    "@types/imagemin-svgo": "9.0.1",
+    "@types/imagemin-svgo": "10.0.0",
     "@types/json-stable-stringify": "1.0.33",
     "@types/karma": "6.3.1",
     "@types/lodash": "4.14.175",
