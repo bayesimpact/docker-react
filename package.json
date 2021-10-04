@@ -22,7 +22,7 @@
     "@types/imagemin-svgo": "9.0.1",
     "@types/json-stable-stringify": "1.0.33",
     "@types/karma": "6.3.1",
-    "@types/lodash": "4.14.174",
+    "@types/lodash": "4.14.175",
     "@types/minimist": "1.2.2",
     "@types/mocha": "8.2.3",
     "@types/node": "16.10.1",
