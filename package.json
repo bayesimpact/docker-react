@@ -116,7 +116,7 @@
     "lodash": "4.17.21",
     "mdi-react": "7.5.0",
     "mocha": "8.4.0",
-    "mocha-junit-reporter": "2.0.0",
+    "mocha-junit-reporter": "2.0.2",
     "nginx-conf": "2.0.0",
     "normalize.css": "8.0.1",
     "npm": "7.24.1",
