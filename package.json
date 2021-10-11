@@ -12,7 +12,7 @@
     "@hot-loader/react-dom": "17.0.1",
     "@mysticatea/eslint-plugin": "13.0.0",
     "@react-firebase/auth": "0.2.10",
-    "@sentry/browser": "6.13.2",
+    "@sentry/browser": "6.13.3",
     "@types/algoliasearch": "4.0.0",
     "@types/amplitude-js": "8.0.1",
     "@types/chai": "4.2.22",
@@ -180,7 +180,7 @@
   },
   "name": "bayesimpact-react",
   "resolutions": {
-    "@types/**/@sentry/browser": "6.13.2",
+    "@types/**/@sentry/browser": "6.13.3",
     "@types/**/webpack": "5.56.1"
   },
   "scripts": {
