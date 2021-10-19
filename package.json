@@ -181,7 +181,7 @@
   "name": "bayesimpact-react",
   "resolutions": {
     "@types/**/@sentry/browser": "6.13.3",
-    "@types/**/webpack": "5.58.2"
+    "webpack": "5.58.2"
   },
   "scripts": {
     "clean": "rimraf dist/*",
