@@ -42,6 +42,7 @@ jobs:
           command: |
             docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
             docker push "bayesimpact/react-base:$(.circleci/tag.sh)"
+            [[ $CIRCLE_BRANCH == "main" ]] && docker push "bayesimpact/react-base:latest"
 
 workflows:
   version: 2.1
