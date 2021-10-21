@@ -165,13 +165,13 @@
     "sha1": "1.1.1",
     "sinon": "11.1.2",
     "smoothscroll-polyfill": "0.4.4",
-    "style-loader": "3.3.0",
+    "style-loader": "3.3.1",
     "svg-transform-loader": "2.0.13",
     "ts-node": "10.2.1",
     "typescript": "4.4.4",
     "unused-files-webpack-plugin": "3.4.0",
     "url-loader": "4.1.1",
-    "webpack": "5.58.2",
+    "webpack": "5.59.0",
     "webpack-cli": "4.9.1",
     "webpack-dev-server": "4.3.1",
     "webpack-pwa-manifest": "4.3.0",
@@ -181,7 +181,7 @@
   "name": "bayesimpact-react",
   "resolutions": {
     "@types/**/@sentry/browser": "6.13.3",
-    "webpack": "5.58.2"
+    "webpack": "5.59.0"
   },
   "scripts": {
     "clean": "rimraf dist/*",
