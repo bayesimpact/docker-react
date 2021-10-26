@@ -157,7 +157,7 @@
     "redux-firestore": "0.15.0",
     "redux-mock-store": "1.5.4",
     "redux-sentry-middleware": "0.2.2",
-    "redux-thunk": "2.3.0",
+    "redux-thunk": "2.4.0",
     "rename-output-webpack-plugin": "1.0.1",
     "responsive-loader": "2.3.0",
     "rimraf": "3.0.2",
