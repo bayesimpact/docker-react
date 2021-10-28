@@ -43,6 +43,7 @@ jobs:
             docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
             docker push "bayesimpact/react-base:$(.circleci/tag.sh)"
             if [[ $CIRCLE_BRANCH == "main" ]]; then
+              docker tag "bayesimpact/react-base:$(.circleci/tag.sh)" "bayesimpact/react-base:latest"
               docker push "bayesimpact/react-base:latest"
             fi
 
