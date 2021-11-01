@@ -2,7 +2,7 @@
   "dependencies": {
     "@babel/cli": "7.15.7",
     "@babel/core": "7.15.8",
-    "@babel/plugin-proposal-class-properties": "7.14.5",
+    "@babel/plugin-proposal-class-properties": "7.16.0",
     "@babel/plugin-proposal-optional-chaining": "7.14.5",
     "@babel/plugin-syntax-dynamic-import": "7.8.3",
     "@babel/polyfill": "7.12.1",
@@ -46,7 +46,7 @@
     "@types/webpack-dev-server": "4.3.1",
     "@types/webpack-env": "1.16.3",
     "@types/zepto": "1.0.32",
-    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "4.33.0",
     "airtable": "0.11.1",
     "algoliasearch": "4.8.5",
