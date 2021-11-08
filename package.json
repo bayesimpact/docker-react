@@ -124,7 +124,7 @@
     "null-loader": "4.0.1",
     "package-json-validator": "0.6.3",
     "prop-types": "15.7.2",
-    "puppeteer": "10.4.0",
+    "puppeteer": "11.0.0",
     "query-string": "7.0.1",
     "radium": "0.26.1",
     "randexp": "0.5.3",
