@@ -12,7 +12,7 @@
     "@hot-loader/react-dom": "17.0.1",
     "@mysticatea/eslint-plugin": "13.0.0",
     "@react-firebase/auth": "0.2.10",
-    "@sentry/browser": "6.14.1",
+    "@sentry/browser": "6.14.3",
     "@types/algoliasearch": "4.0.0",
     "@types/amplitude-js": "8.0.1",
     "@types/chai": "4.2.22",
@@ -83,7 +83,7 @@
     "esm": "3.2.25",
     "exports-loader": "3.1.0",
     "file-loader": "6.2.0",
-    "firebase": "9.3.0",
+    "firebase": "9.4.0",
     "firebase-tools": "9.22.0",
     "glob": "7.2.0",
     "google-protobuf": "3.19.1",
@@ -138,7 +138,7 @@
     "react-google-login": "5.2.2",
     "react-height": "3.0.2",
     "react-hot-loader": "4.13.0",
-    "react-i18next": "11.13.0",
+    "react-i18next": "11.14.2",
     "react-lazyload": "3.2.0",
     "react-markdown": "6.0.3",
     "react-redux": "7.2.6",
@@ -180,7 +180,7 @@
   },
   "name": "bayesimpact-react",
   "resolutions": {
-    "@sentry/browser": "6.14.1",
+    "@sentry/browser": "6.14.3",
     "webpack": "5.62.1"
   },
   "scripts": {
