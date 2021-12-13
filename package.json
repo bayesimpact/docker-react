@@ -60,7 +60,7 @@
     "browser-metrics": "0.1.4",
     "chai": "4.3.4",
     "chai-almost": "1.0.1",
-    "connected-react-router": "6.9.1",
+    "connected-react-router": "6.9.2",
     "copy-to-clipboard": "3.3.1",
     "copyfiles": "2.4.1",
     "core-js": "3.19.3",
