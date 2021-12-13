@@ -17,7 +17,7 @@
     "@sentry/react": "6.16.1",
     "@types/algoliasearch": "4.0.0",
     "@types/amplitude-js": "8.0.2",
-    "@types/chai": "4.2.22",
+    "@types/chai": "4.3.0",
     "@types/chai-almost": "1.0.1",
     "@types/imagemin-mozjpeg": "8.0.1",
     "@types/imagemin-optipng": "5.2.1",
