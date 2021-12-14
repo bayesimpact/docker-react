@@ -2,7 +2,7 @@
   "dependencies": {
     "@babel/cli": "7.16.0",
     "@babel/core": "7.16.0",
-    "@babel/plugin-proposal-class-properties": "7.16.0",
+    "@babel/plugin-proposal-class-properties": "7.16.5",
     "@babel/plugin-proposal-optional-chaining": "7.16.0",
     "@babel/plugin-syntax-dynamic-import": "7.8.3",
     "@babel/polyfill": "7.12.1",
@@ -140,7 +140,7 @@
     "react-google-login": "5.2.2",
     "react-height": "3.0.2",
     "react-hot-loader": "4.13.0",
-    "react-i18next": "11.15.0",
+    "react-i18next": "11.15.1",
     "react-lazyload": "3.2.0",
     "react-markdown": "7.1.1",
     "react-redux": "7.2.6",
