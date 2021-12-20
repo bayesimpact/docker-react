@@ -5,7 +5,7 @@ while read dep; do
     read resolution_version
     package="$(sed -e 's/^.*\*\*\///' <<< $dep)"
     version="$(jq -r .dependencies[\""$package"\"] package.json)"
-    if [ "$version" != "$resolution_version" ]; then
+    if [ "$version" != "$resolution_version" ] && [ "$version" != "null" ]; then
         echo "Need $package $version but got $resolution_version in resolutions"
         exit 1
     fi
