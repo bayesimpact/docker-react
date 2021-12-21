@@ -1,4 +1,4 @@
-FROM node:16.5.0
+FROM node:17.3.0
 
 EXPOSE 80
 ENV BIND_HOST=0.0.0.0
@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -qqy --no-install-recommends gconf-service
     libgdk-pixbuf2.0-0 libgbm1 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 \
     libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 \
     libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation \
-    libappindicator1 libnss3 lsb-release xdg-utils wget libxshmfence1
+    libnss3 lsb-release xdg-utils wget libxshmfence1
 
 # TODO(cyrille): Drop this once https://github.com/puppeteer/puppeteer/issues/5835 is resolved.
 RUN npm install puppeteer@5.3.0 && rm package-lock.json
