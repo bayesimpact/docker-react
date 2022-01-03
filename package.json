@@ -16,7 +16,7 @@
     "@sentry/browser": "6.16.1",
     "@sentry/react": "6.16.1",
     "@types/algoliasearch": "4.0.0",
-    "@types/amplitude-js": "8.9.0",
+    "@types/amplitude-js": "8.9.2",
     "@types/chai": "4.3.0",
     "@types/chai-almost": "1.0.1",
     "@types/imagemin-mozjpeg": "8.0.1",
@@ -45,7 +45,6 @@
     "@types/sinon": "10.0.6",
     "@types/smoothscroll-polyfill": "0.3.1",
     "@types/terser-webpack-plugin": "5.2.0",
-    "@types/webpack-dev-server": "4.5.0",
     "@types/webpack-env": "1.16.3",
     "@types/zepto": "1.0.32",
     "@typescript-eslint/eslint-plugin": "5.8.1",
@@ -176,7 +175,7 @@
     "url-loader": "4.1.1",
     "webpack": "5.65.0",
     "webpack-cli": "4.9.1",
-    "webpack-dev-server": "4.6.0",
+    "webpack-dev-server": "4.7.2",
     "webpack-pwa-manifest": "4.3.0",
     "whatwg-fetch": "3.6.2",
     "yarn-lazy-lock": "0.1.4"
@@ -184,8 +183,7 @@
   "name": "bayesimpact-react",
   "resolutions": {
     "@sentry/browser": "6.16.1",
-    "webpack": "5.65.0",
-    "webpack-dev-middleware": "5.2.2"
+    "webpack": "5.65.0"
   },
   "scripts": {
     "clean": "rimraf dist/*",
