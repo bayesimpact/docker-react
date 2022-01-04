@@ -124,7 +124,7 @@
     "npm-run-all": "4.1.5",
     "null-loader": "4.0.1",
     "package-json-validator": "0.6.3",
-    "prop-types": "15.7.2",
+    "prop-types": "15.8.0",
     "puppeteer": "12.0.1",
     "query-string": "7.0.1",
     "radium": "0.26.1",
