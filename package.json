@@ -66,7 +66,7 @@
     "detect-browser": "5.3.0",
     "es6-promise": "4.2.8",
     "es6-set-proptypes": "1.0.0",
-    "eslint": "7.32.0",
+    "eslint": "8.6.0",
     "eslint-import-resolver-typescript": "2.5.0",
     "eslint-import-resolver-webpack": "0.13.2",
     "eslint-loader": "4.0.2",
