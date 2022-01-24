@@ -13,7 +13,7 @@
     "@mysticatea/eslint-plugin": "13.0.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.4",
     "@react-firebase/auth": "0.2.10",
-    "@sentry/browser": "6.16.1",
+    "@sentry/browser": "6.17.0",
     "@sentry/react": "6.16.1",
     "@types/amplitude-js": "8.9.4",
     "@types/chai": "4.3.0",
@@ -87,7 +87,7 @@
     "glob": "7.2.0",
     "google-protobuf": "3.19.3",
     "html-webpack-plugin": "5.5.0",
-    "i18next": "21.6.6",
+    "i18next": "21.6.7",
     "i18next-browser-languagedetector": "6.1.2",
     "imagemin": "8.0.1",
     "imagemin-mozjpeg": "9.0.0",
@@ -182,7 +182,7 @@
   },
   "name": "bayesimpact-react",
   "resolutions": {
-    "@sentry/browser": "6.16.1",
+    "@sentry/browser": "6.17.0",
     "webpack": "5.66.0"
   },
   "scripts": {
