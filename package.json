@@ -15,7 +15,7 @@
     "@react-firebase/auth": "0.2.10",
     "@sentry/browser": "6.17.2",
     "@sentry/react": "6.17.2",
-    "@types/amplitude-js": "8.9.4",
+    "@types/amplitude-js": "8.9.5",
     "@types/chai": "4.3.0",
     "@types/chai-almost": "1.0.1",
     "@types/imagemin-mozjpeg": "8.0.1",
