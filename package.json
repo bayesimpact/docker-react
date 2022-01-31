@@ -150,7 +150,7 @@
     "react-share": "4.4.0",
     "react-swipeable": "6.2.0",
     "react-test-renderer": "17.0.2",
-    "react-twitter-embed": "3.0.3",
+    "react-twitter-embed": "4.0.4",
     "react-visibility-sensor": "5.1.1",
     "redux": "4.1.2",
     "redux-devtools-extension": "2.13.9",
