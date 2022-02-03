@@ -46,7 +46,7 @@
     "@types/webpack-env": "1.16.3",
     "@types/zepto": "1.0.32",
     "@typescript-eslint/eslint-plugin": "5.10.1",
-    "@typescript-eslint/parser": "5.10.1",
+    "@typescript-eslint/parser": "5.10.2",
     "airtable": "0.11.1",
     "algoliasearch": "4.8.5",
     "amplitude-js": "8.16.1",
@@ -175,7 +175,7 @@
     "url-loader": "4.1.1",
     "webpack": "5.68.0",
     "webpack-cli": "4.9.2",
-    "webpack-dev-server": "4.7.3",
+    "webpack-dev-server": "4.7.4",
     "webpack-pwa-manifest": "4.3.0",
     "whatwg-fetch": "3.6.2",
     "yarn-lazy-lock": "0.1.4"
