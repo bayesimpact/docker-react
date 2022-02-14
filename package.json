@@ -13,7 +13,7 @@
     "@mysticatea/eslint-plugin": "13.0.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.4",
     "@react-firebase/auth": "0.2.10",
-    "@sentry/browser": "6.17.4",
+    "@sentry/browser": "6.17.7",
     "@sentry/react": "6.17.4",
     "@types/amplitude-js": "8.9.6",
     "@types/chai": "4.3.0",
@@ -182,7 +182,7 @@
   },
   "name": "bayesimpact-react",
   "resolutions": {
-    "@sentry/browser": "6.17.4",
+    "@sentry/browser": "6.17.7",
     "webpack": "5.68.0"
   },
   "scripts": {
