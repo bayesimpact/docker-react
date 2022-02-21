@@ -47,7 +47,7 @@
     "@types/zepto": "1.0.32",
     "@typescript-eslint/eslint-plugin": "5.11.0",
     "@typescript-eslint/parser": "5.11.0",
-    "airtable": "0.11.1",
+    "airtable": "0.11.2",
     "algoliasearch": "4.8.5",
     "amplitude-js": "8.17.0",
     "autocomplete.js": "0.38.1",
