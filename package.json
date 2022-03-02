@@ -14,7 +14,7 @@
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.4",
     "@react-firebase/auth": "0.2.10",
     "@sentry/browser": "6.17.7",
-    "@sentry/react": "6.17.7",
+    "@sentry/react": "6.18.1",
     "@types/amplitude-js": "8.16.0",
     "@types/chai": "4.3.0",
     "@types/chai-almost": "1.0.1",
