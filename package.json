@@ -45,7 +45,7 @@
     "@types/smoothscroll-polyfill": "0.3.1",
     "@types/webpack-env": "1.16.3",
     "@types/zepto": "1.0.32",
-    "@typescript-eslint/eslint-plugin": "5.16.0",
+    "@typescript-eslint/eslint-plugin": "5.17.0",
     "@typescript-eslint/parser": "5.17.0",
     "airtable": "0.11.2",
     "algoliasearch": "4.8.5",
