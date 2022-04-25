@@ -30,7 +30,7 @@
     "@types/prop-types": "15.7.5",
     "@types/radium": "0.24.4",
     "@types/react": "17.0.43",
-    "@types/react-dom": "17.0.14",
+    "@types/react-dom": "18.0.2",
     "@types/react-facebook-login": "4.1.4",
     "@types/react-lazyload": "3.2.0",
     "@types/react-loadable": "5.5.6",
@@ -184,7 +184,7 @@
   "resolutions": {
     "@sentry/browser": "6.19.6",
     "@types/react": "17.0.43",
-    "@types/react-dom": "17.0.14",
+    "@types/react-dom": "18.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "webpack": "5.72.0"
