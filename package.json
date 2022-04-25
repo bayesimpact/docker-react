@@ -25,7 +25,7 @@
     "@types/karma": "6.3.3",
     "@types/lodash": "4.14.181",
     "@types/minimist": "1.2.2",
-    "@types/mocha": "8.2.3",
+    "@types/mocha": "9.1.1",
     "@types/node": "17.0.23",
     "@types/prop-types": "15.7.5",
     "@types/radium": "0.24.4",
