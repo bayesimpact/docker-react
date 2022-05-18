@@ -187,7 +187,8 @@
     "@types/react-dom": "17.0.14",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "webpack": "5.72.0"
+    "webpack": "5.72.0",
+    "webpack-dev-middleware": "5.3.1"
   },
   "scripts": {
     "clean": "rimraf dist/*",
