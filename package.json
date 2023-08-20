@@ -118,7 +118,7 @@
     "mocha-junit-reporter": "2.0.2",
     "nginx-conf": "2.0.0",
     "normalize.css": "8.0.1",
-    "npm": "8.6.0",
+    "npm": "8.11.0",
     "npm-run-all": "4.1.5",
     "null-loader": "4.0.1",
     "package-json-validator": "0.6.3",
