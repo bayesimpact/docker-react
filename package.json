@@ -99,7 +99,7 @@
     "js-cookie": "3.0.1",
     "json-loader": "0.5.7",
     "json-stable-stringify": "1.0.1",
-    "json5": "2.2.1",
+    "json5": "2.2.2",
     "json5-loader": "4.0.1",
     "jsonlint": "1.6.3",
     "jspdf": "2.5.1",
